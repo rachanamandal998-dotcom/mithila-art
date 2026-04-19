@@ -12,6 +12,13 @@ import heroArtwork6 from "@/assets/six.png";
 import heroArtwork7 from "@/assets/seven.png";
 import ImageSlider from "../sections/ImageSlider"
 import { Mandala3D } from "./Mandala3D";
+import { LotusFrame3D } from "./LotusFrame3D";
+import { GarlandMala3D } from "./GarlandMala3D";
+import { LakshmiBloom3D } from "./LakshmiBloom3D";
+import { MithilaCD3D } from "./MithilaCD3D";
+import { PeacockMandala3D } from "./PeacockMandala3D";
+import { RamaSitaCD3D } from "./RamaSitaCD3D";
+import { SunDeity3D } from "./SunDeity3D";
 
 export const HeroSection = () => {
   const navigate = useNavigate();
@@ -170,6 +177,13 @@ export const HeroSection = () => {
     </section>
     <ImageSlider />
     <Mandala3D />
+    <LotusFrame3D />
+    <GarlandMala3D />
+    <LakshmiBloom3D />
+    <MithilaCD3D />
+    <PeacockMandala3D />
+    <RamaSitaCD3D />
+    <SunDeity3D />
     </>     
   );
 };

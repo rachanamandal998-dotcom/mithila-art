@@ -13,7 +13,7 @@ export function Mandala3D({ className = "" }: { className?: string }) {
           <motion.svg
             key={i}
             viewBox="0 0 200 200"
-            className="absolute inset-0 h-full w-34"
+            className="absolute inset-0 h-full w-full"
             style={{ transform: `rotateX(${i * 30}deg) translateZ(${i * 8}px)` }}
             animate={{ rotate: i % 2 === 0 ? 360 : -360 }}
             transition={{ duration: 30 + i * 10, repeat: Infinity, ease: "linear" }}
