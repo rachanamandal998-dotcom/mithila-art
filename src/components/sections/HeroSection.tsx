@@ -10,6 +10,7 @@ import heroArtwork4 from "@/assets/four.png";
 import heroArtwork5 from "@/assets/five.png";
 import heroArtwork6 from "@/assets/six.png";
 import heroArtwork7 from "@/assets/seven.png";
+import ImageSlider from "../sections/ImageSlider"
 
 export const HeroSection = () => {
   const navigate = useNavigate();
@@ -53,6 +54,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
+    <>
     <section className="relative w-full h-screen overflow-hidden">
 
       {/* =========================
@@ -158,10 +160,14 @@ export const HeroSection = () => {
               className="w-16 h-12 object-cover"
             />
           </div>
+
         ))}
-
+          
+    
       </div>
-
+  
     </section>
+    <ImageSlider />
+    </>     
   );
 };

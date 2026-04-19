@@ -59,13 +59,16 @@ export const Header = () => {
       )}
     >
 
-      {/* 📱 MOBILE FULL COVER BACKGROUND IMAGE */}
-      <div
-        className="absolute inset-0 bg-cover bg-center pointer-events-none lg:hidden"
-        style={{
-          backgroundImage: `url(${navbarBg})`,
-        }}
-      />
+     {/* 📱 MOBILE FULL COVER BACKGROUND IMAGE (BLUR) */}
+<div
+  className="absolute inset-0 bg-cover bg-center lg:hidden"
+  style={{
+    backgroundImage: `url(${navbarBg})`,
+    filter: "blur(3px)", // 🔥 blur effect
+    transform: "scale(1.1)", // prevents edge cut from blur
+  }}
+/>
+
 
       <div className="relative container mx-auto px-4 flex items-center justify-between">
 
@@ -136,7 +139,7 @@ export const Header = () => {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="lg:hidden p-2 bg-white rounded-md"
+          className="lg:hidden p-2 bg-orange-600 rounded-md"
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
