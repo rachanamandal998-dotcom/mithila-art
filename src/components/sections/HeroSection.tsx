@@ -11,6 +11,7 @@ import heroArtwork5 from "@/assets/five.png";
 import heroArtwork6 from "@/assets/six.png";
 import heroArtwork7 from "@/assets/seven.png";
 import ImageSlider from "../sections/ImageSlider"
+import { Mandala3D } from "./Mandala3D";
 
 export const HeroSection = () => {
   const navigate = useNavigate();
@@ -168,6 +169,7 @@ export const HeroSection = () => {
   
     </section>
     <ImageSlider />
+    <Mandala3D />
     </>     
   );
 };
