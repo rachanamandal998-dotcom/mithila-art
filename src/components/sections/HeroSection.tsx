@@ -175,9 +175,9 @@ export const HeroSection = () => {
       </div>
   
     </section>
-    <ImageSlider />
-    <Mandala3D />
-    <LotusFrame3D />
+   
+   
+  
     <GarlandMala3D />
     <LakshmiBloom3D />
     <MithilaCD3D />

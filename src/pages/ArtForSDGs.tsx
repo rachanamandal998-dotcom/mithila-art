@@ -2,12 +2,16 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { Mandala3D } from '@/components/sections/Mandala3D';
+import ImageSlider from '../components/sections/ImageSlider'
+import sdgImage from "../assets/GlobalChange.png";
+
 import { Target, Leaf, Users, GraduationCap, Heart, Sun, Calendar, MapPin, Award } from 'lucide-react';
 
 
 // MAIN HERO IMAGE
-const sdgImage =
-  "https://i.imgur.com/31AWGD0.jpeg";
+const sdgImage = "GlobalChange.png"
+  "";
 
 // SDG EDITION IMAGES
 const sdgImages = {
@@ -122,18 +126,39 @@ const ArtForSDGs = () => {
       <Header />
 
       {/* Hero */}
-      <section className="pt-32 pb-20 relative">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="font-playfair text-5xl font-bold">
-              Art for <span className="gradient-text-primary">SDGs</span>
-            </h1>
-            <p className="text-xl text-muted-foreground mt-4">
-              Using Mithila art to communicate global challenges and inspire change.
-            </p>
-          </div>
-        </div>
-      </section>
+{/* Hero */}
+<section className="pt-32 pb-20 relative">
+  <div className="container mx-auto px-4">
+
+    <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+
+      {/* LEFT SIDE - TEXT */}
+      <div className="text-left">
+
+        <h1 className="font-playfair text-5xl font-bold">
+          Mithila Art for <span className="gradient-text-primary">Global Change</span>
+        </h1>
+
+      <p className="text-xl text-muted-foreground mt-6 leading-relaxed text-justify">
+  Mithila art is a timeless cultural expression that blends traditional heritage with modern global values. Rooted in Janakpur’s rich artistic legacy, it reflects themes of nature, community, and harmony.
+
+  Through powerful visual storytelling, it highlights key global issues such as climate change, gender equality, cultural preservation, and social justice. This art form transforms complex challenges into meaningful narratives that are easy to understand and connect with.
+
+  By bridging local artisans with global platforms, Mithila art empowers communities and promotes dialogue, making it a living force for education, awareness, and sustainable change.
+</p>
+
+
+      </div>
+
+      {/* RIGHT SIDE - 3D MANDALA */}
+ <div className="flex justify-center items-center w-full h-[400px] lg:h-[500px]">
+  <Mandala3D />
+</div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* Featured Image */}
       <section className="py-12">
@@ -224,21 +249,7 @@ const ArtForSDGs = () => {
       </section>
 
       {/* Gallery */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-center font-playfair text-4xl font-bold mb-12">
-            Art for SDGs Gallery
-          </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-            {galleryImages.map((url, idx) => (
-              <div key={idx} className="aspect-square rounded-xl overflow-hidden">
-                <img src={url} alt="Gallery" className="w-full h-full object-cover" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     <ImageSlider />
 
       {/* CTA */}
       <section className="py-20 bg-gradient-sindoor text-white text-center">

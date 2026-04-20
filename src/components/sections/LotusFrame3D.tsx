@@ -110,7 +110,7 @@ export function LotusFrame3D({ className = "" }: { className?: string }) {
           <img
             src={heroArt}
             alt="Traditional Mithila painting from Janakpur depicting Goddess Sita with peacocks and lotus"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain"
             width={1024}
             height={1024}
           />

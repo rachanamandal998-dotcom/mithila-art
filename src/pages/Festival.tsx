@@ -2,7 +2,8 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Calendar, MapPin, Music, Palette, Utensils, Users, Star, Camera, Award, BookOpen, Mic, Heart } from 'lucide-react';
+import { Calendar, MapPin, Music, Palette, Utensils, Users, Star, Camera, Award, BookOpen, Mic, Heart,  Sun } from 'lucide-react';
+import { LotusFrame3D } from '@/components/sections/LotusFrame3D';
 
 const Festival = () => {
   const festivalHighlights = [
@@ -107,27 +108,52 @@ const Festival = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
       {/* Hero */}
-      <section className="pt-32 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-primary/10" />
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 rounded-full mb-6">
-              <Calendar className="w-4 h-4 text-accent-foreground" />
-              <span className="text-sm font-medium text-accent-foreground">Annual Celebration</span>
-            </div>
-            <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Mithila Festival <span className="gradient-text-primary">USA</span>
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              The largest celebration of Maithil culture, art, and heritage in North America. 
-              Held annually in April around Mithila New Year (Jur Sital) and Folk King Salhesh Jayanti, 
-              drawing participation from dignitaries, ambassadors, UN officials, and elected representatives.
-            </p>
-          </div>
+
+
+      
+{/* Laxmi Puja Hero */}
+<section className="pt-32 pb-20 relative overflow-hidden">
+  <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 via-transparent to-orange-500/10" />
+
+  <div className="container mx-auto px-4 relative">
+
+    <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+
+      {/* LEFT SIDE - TEXT */}
+      <div className="text-center lg:text-left">
+
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/20 rounded-full mb-6">
+          <span className="text-sm font-medium text-yellow-700">
+            Sacred Festival of Prosperity
+          </span>
         </div>
-      </section>
+
+        <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
+          Laxmi Puja in <span className="gradient-text-primary">Mithila Tradition</span>
+        </h1>
+
+        <p className="text-xl text-muted-foreground leading-relaxed text-justify">
+          Laxmi Puja is one of the most sacred festivals in Mithila culture, dedicated to Goddess Lakshmi,
+          the symbol of wealth, prosperity, and abundance. Celebrated with deep devotion across Maithil households,
+          this festival beautifully blends spirituality with artistic expression. Traditional Mithila paintings,
+          decorated homes, and glowing oil lamps create an atmosphere of harmony, welcoming prosperity, positivity,
+          and spiritual well-being into daily life.
+        </p>
+
+      </div>
+
+      {/* RIGHT SIDE - 3D IMAGE */}
+      <div className="flex justify-center items-center">
+        <div className="w-full max-w-md hover:scale-105 transition duration-500">
+          <LotusFrame3D className="w-full" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* Featured Image */}
       <section className="py-12">
@@ -151,6 +177,144 @@ const Festival = () => {
           </div>
         </div>
       </section>
+
+{/* Sama Chakeva Section */}
+<section className="py-20">
+  <div className="container mx-auto px-4">
+
+    <div className="max-w-6xl mx-auto">
+
+      {/* TEXT FIRST */}
+      <div>
+
+        {/* Decorative Title Header */}
+        <div className="mb-6">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="h-[2px] w-10 bg-gradient-sindoor"></div>
+            <span className="text-sm uppercase tracking-widest text-primary font-medium">
+              Mithila Festival Tradition
+            </span>
+            <div className="h-[2px] w-10 bg-gradient-sindoor"></div>
+          </div>
+
+          <h2 className="font-playfair text-4xl font-bold text-foreground">
+            Sama Chakeva – <span className="gradient-text-primary">Celebration of Sibling Bond</span>
+          </h2>
+        </div>
+
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Sama Chakeva is a traditional Mithila festival that beautifully celebrates the bond between brothers and sisters. 
+          Rooted in ancient folklore, it symbolizes love, protection, and family unity through storytelling, songs, and rituals.
+        </p>
+
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          During this festival, young girls craft symbolic clay birds representing Sama and Chakeva, 
+          sing traditional folk songs, and perform rituals that express warmth, creativity, and emotional connection. 
+          It reflects the deep cultural values of Mithila where family and relationships are honored with devotion and joy.
+        </p>
+      </div>
+
+      {/* IMAGE BELOW TEXT */}
+      <div className="mt-10 rounded-2xl overflow-hidden shadow-elevated">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/8/83/Sama_Chakeva_Sarlahi_2.jpg"
+          alt="Sama Chakeva Festival Mithila Art"
+          className="w-full h-[400px] object-cover"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+{/* Chhath Puja Section */}
+<section className="py-20">
+  <div className="container mx-auto px-4">
+
+    <div className="max-w-6xl mx-auto">
+
+      {/* TEXT FIRST */}
+      <div>
+
+        {/* Decorative Title Header */}
+        <div className="mb-6">
+          <div className="flex items-center gap-3 mb-3">
+           
+          </div>
+
+          <h2 className="font-playfair text-4xl font-bold text-foreground">
+            Chhath Puja – <span className="gradient-text-primary">Worship of the Sun God</span>
+          </h2>
+        </div>
+
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Chhath Puja is one of the most sacred and spiritually powerful festivals of Mithila, dedicated to Surya Dev (Sun God) and Chhathi Maiya. 
+          It is a festival of purity, discipline, and deep devotion, where devotees offer prayers standing in rivers and ponds during sunrise and sunset.
+        </p>
+
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          This ancient ritual symbolizes gratitude toward nature, life energy, and cosmic balance. Families observe strict fasting, prepare traditional offerings,
+          and gather at riverbanks with devotion, making Chhath Puja one of the most powerful expressions of faith and environmental harmony in Mithila culture.
+        </p>
+      </div>
+
+      {/* IMAGE BELOW TEXT */}
+      <div className="mt-10 rounded-2xl overflow-hidden shadow-elevated">
+        <img
+          src="https://media.istockphoto.com/id/1802542097/photo/an-ancient-hindu-festival-dedicated-to-lord-surya-and-chhathi.jpg?s=612x612&w=0&k=20&c=PLOeedEBAxrkW0vjaJV_98D5b9Zfzwjm57N5jD5k5Yg="
+          alt="Chhath Puja Mithila Festival Sunrise Ritual"
+          className="w-full h-[400px] object-cover"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+{/* Jur Sital Section */}
+<section className="py-20">
+  <div className="container mx-auto px-4">
+
+    <div className="max-w-6xl mx-auto">
+
+      {/* TEXT FIRST */}
+      <div>
+
+        {/* Decorative Title Header */}
+        <div className="mb-6">
+          <div className="flex items-center gap-3 mb-3">
+            
+          </div>
+
+          <h2 className="font-playfair text-4xl font-bold text-foreground">
+            Jur Sital – <span className="gradient-text-primary">Mithila New Year</span>
+          </h2>
+        </div>
+
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Jur Sital marks the traditional New Year of Mithila, symbolizing renewal, freshness, and harmony with nature. 
+          It is celebrated at the beginning of the agricultural cycle, bringing hope, prosperity, and new beginnings for families and communities.
+        </p>
+
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          On this day, elders bless younger members with cool water and good wishes for health and happiness. 
+          Traditional foods, cultural rituals, and family gatherings define this festival, making it a beautiful expression of Mithila’s connection with nature, agriculture, and seasonal balance.
+        </p>
+      </div>
+
+      {/* IMAGE BELOW TEXT */}
+      <div className="mt-10 rounded-2xl overflow-hidden shadow-elevated">
+        <img
+          src="https://mithilalegacy.com/_next/image?url=https%3A%2F%2Fcdn.mithilalegacy.com%2Ffestivals%2Fjur-sital.webp&w=3840&q=75"
+          alt="Jur Sital Mithila New Year Celebration"
+          className="w-full h-[400px] object-cover"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
 
       {/* Festival Overview */}
       <section className="py-20 bg-muted/30">
