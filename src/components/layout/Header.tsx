@@ -99,7 +99,7 @@ export const Header = () => {
               <Link
                 to={link.href || '#'}
                 className={cn(
-                  "px-3 py-2 text-sm font-inter font-semibold flex items-center gap-1 rounded-md transition-all",
+                  "px-3 py-2 text-sm font-inter font-normal flex items-center gap-1 rounded-md transition-all",
                   location.pathname === link.href
                     ? "bg-white text-black shadow-md"
                     : "bg-white text-black hover:bg-gray-100"
@@ -139,7 +139,7 @@ export const Header = () => {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="lg:hidden p-2 bg-yellow-600 rounded-md"
+          className="lg:hidden p-2 bg-yellow-600 rounded-md relative z-50"
         >
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>

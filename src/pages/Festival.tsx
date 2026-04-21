@@ -269,6 +269,44 @@ const Festival = () => {
     </div>
   </div>
 </section>
+{/* Jhijhiya Festival Section */}
+<section className="py-20">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      
+      {/* TEXT FIRST */}
+      <div>
+        {/* Decorative Title Header */}
+        <div className="mb-6">
+          <h2 className="font-playfair text-4xl font-bold text-foreground">
+            Jhijhiya – <span className="gradient-text-primary">Dance of Spirits and Mystery</span>
+          </h2>
+        </div>
+
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Jhijhiya is a mesmerizing and mysterious folk dance tradition of the Mithila region, performed primarily by women during the Dashain festival. 
+          The dancers carry intricate, perforated clay lanterns (Jhijhiya) on their heads, inside which a flame burns throughout the performance.
+        </p>
+
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          The dance is both a spiritual offering and a demonstration of focus and balance. As the women dance to the rhythm of folk music, the 
+          flickering lights create an ethereal atmosphere. Jhijhiya is deeply rooted in the cultural identity of Mithila, symbolizing the 
+          victory of light over darkness and the protection of the community from malevolent forces.
+        </p>
+      </div>
+
+      {/* IMAGE BELOW TEXT */}
+      <div className="mt-10 rounded-2xl overflow-hidden shadow-elevated">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Women_performing_Jhijhiya_dance.jpg"
+          alt="Jhijhiya Dance Mithila Tradition"
+          className="w-full h-[400px] object-cover"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
 {/* Jur Sital Section */}
 <section className="py-20">
   <div className="container mx-auto px-4">

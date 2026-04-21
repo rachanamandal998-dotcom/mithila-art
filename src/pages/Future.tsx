@@ -1,34 +1,31 @@
-import { Header } from '@/components/layout/Header';
-import { Footer } from '@/components/layout/Footer';
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import {
-  Building2, Cloud, Globe, Users,
-  Sparkles, Target, ArrowRight,
-  GraduationCap, Palette, Video, BookOpen
+import { 
+  ArrowRight, 
+  BookOpen, 
+  Building2, 
+  Cloud, 
+  Globe, 
+  GraduationCap, 
+  Palette, 
+  Sparkles, 
+  Target, 
+  Users 
 } from 'lucide-react';
 
-// ✅ Image imports
+// Components
+import { Footer } from '@/components/layout/Footer';
+import { Header } from '@/components/layout/Header';
+import { Button } from '@/components/ui/button';
+
+// Assets
 import museumImage from '@/assets/museum-concept.jpg';
-
-import GlobalChange from "../assets/GlobalChange.png";
-import GlobalChange4 from "../assets/GlobalChange4.png";
-import mithilaArtwork from "../assets/mithila-artwork.jpg";
-import mithilaHero from "../assets/mithila-hero.jpg";
-import festivalCelebration3 from "../assets/festival-celebration3.jpg";
-import sdgMithilaArt from "../assets/sdg-mithila-art.jpg";
-import masterArtist3 from "../assets/master-artist3.jpg";
-
-// ✅ Image array
-const visionImages = [
-  { img: GlobalChange, title: "Museum Concept" },
-  { img: GlobalChange4, title: "World Tour" },
-  { img: mithilaArtwork, title: "Youth Program" },
-  { img: mithilaHero, title: "Education Platform" },
-  { img: festivalCelebration3, title: "Artist Residency" },
-  { img: sdgMithilaArt, title: "Research Center" },
-  { img: masterArtist3, title: "Global Network" },
-];
+import GlobalChange from '../assets/GlobalChange.png';
+import GlobalChange4 from '../assets/GlobalChange4.png';
+import mithilaArtwork from '../assets/mithila-artwork.jpg';
+import mithilaHero from '../assets/mithila-hero.jpg';
+import festivalCelebration3 from '../assets/festival-celebration3.jpg';
+import sdgMithilaArt from '../assets/sdg-mithila-art.jpg';
+import masterArtist3 from '../assets/master-artist3.jpg';
 
 const Future = () => {
   const majorInitiatives = [
@@ -109,128 +106,182 @@ const Future = () => {
   ];
 
   const roadmap = [
-    { year: "2025", milestone: "World Tour Launch", description: "Expand Art for SDGs exhibitions to multiple international cities" },
-    { year: "2025-2026", milestone: "Digital Archive Phase 1", description: "Launch digital collection with 1,000+ digitized artworks and oral histories" },
-    { year: "2026", milestone: "Education Platform", description: "Online courses and school curriculum packages available" },
-    { year: "2027", milestone: "Museum Planning", description: "Finalize MoM New York location and architectural planning" },
-    { year: "2028", milestone: "Youth Fellowship Launch", description: "First cohort of cultural leadership fellows" },
-    { year: "2029-2030", milestone: "Museum Opening", description: "Grand opening of Museum of Mithila Heritage" }
+    { year: "Ancient Origins", milestone: "Mithila Art Tradition Begins", description: "Centuries-old folk tradition passed through generations" },
+    { year: "2025", milestone: "World Tour Launch", description: "Global exhibitions begin across major cities" },
+    { year: "2025-2026", milestone: "Digital Archive Phase 1", description: "1,000+ artworks digitized with oral histories" },
+    { year: "2026", milestone: "Education Platform", description: "Online learning system launched globally" },
+    { year: "2027", milestone: "Museum Planning", description: "Final architectural design of MoM New York" },
+    { year: "2028", milestone: "Youth Fellowship Launch", description: "First cultural leadership fellows selected" },
+    { year: "2029-2030", milestone: "Museum Opening", description: "Museum of Mithila Heritage opens in New York" }
   ];
+
+  const allImages = [
+    GlobalChange,
+    GlobalChange4,
+    mithilaArtwork,
+    mithilaHero,
+    festivalCelebration3,
+    sdgMithilaArt,
+    masterArtist3
+  ];
+
+  // Helper to format filenames for display
+  const formatFileName = (filePath: string) => {
+    const fileName = filePath.split('/').pop()?.split('.').shift() || '';
+    return fileName
+      .replace(/([A-Z]|\d+)/g, ' $1')
+      .trim()
+      .replace(/^\w/, (c) => c.toUpperCase());
+  };
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      
+      <section className="pt-32 pb-20 text-center">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-6">
+          <Sparkles className="w-4 h-4 text-secondary" />
+          <span className="text-sm font-medium text-secondary">Building Tomorrow</span>
+        </div>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10" />
+        <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
+          Future <span className="gradient-text-cultural">Initiatives</span>
+        </h1>
 
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-4xl mx-auto text-center">
+        <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
+          Our ambitious vision for preserving and promoting Mithila heritage for generations
+          to come, including landmark institutions, global expansion, and digital innovation.
+        </p>
 
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-6">
-              <Sparkles className="w-4 h-4 text-secondary" />
-              <span className="text-sm font-medium text-secondary">
-                Building Tomorrow
-              </span>
-            </div>
+        <div className="container mx-auto px-4">
+          <img
+            src={museumImage}
+            alt="Future Vision"
+            className="w-full max-w-5xl mx-auto rounded-2xl"
+          />
+        </div>
+      </section>
+{/* IMPACT METRICS */}
+<section className="py-12 bg-muted/20 border-y border-muted/30">
+  <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    {[
+      { label: "UN HQ Exhibitions", value: "2" },
+      { label: "Government Partners", value: "5+" },
+      { label: "Official Proclamations", value: "Multiple" },
+      { label: "Global Audience Reached", value: "10,000+" }
+    ].map((stat, i) => (
+      <div key={i} className="space-y-1">
+        {/* Changed text-primary to text-secondary for better theme integration */}
+        <div className="text-3xl md:text-4xl font-bold text-secondary mb-1">
+          {stat.value}
+        </div>
+        {/* Uppercase and tracking-wider creates a professional "stat" look */}
+        <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+          {stat.label}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
-            <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Future <span className="gradient-text-cultural">Initiatives</span>
-            </h1>
-
-            <p className="text-xl text-muted-foreground leading-relaxed text-justify">
-              Our vision is to preserve, elevate, and globalize Mithila heritage 
-              through innovative institutions, digital transformation, and 
-              community-driven programs. By connecting tradition with modern 
-              platforms, we aim to create lasting cultural impact, empower artists, 
-              and ensure that the richness of Mithila art continues to inspire 
-              future generations across the world.
-            </p>
-
+      {/* INITIATIVES */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="font-playfair text-4xl font-bold text-center mb-10">Strategic Goals & Initiatives</h2>
+          <div className="space-y-10 max-w-5xl mx-auto">
+            {majorInitiatives.map((item, index) => (
+              <div key={index} className="glass-card rounded-3xl p-8 md:p-12">
+                <div className="flex items-center gap-4 mb-4">
+                  <item.icon className="w-8 h-8 text-primary" />
+                  <h3 className="text-2xl font-semibold">{item.title}</h3>
+                  <span className="text-xs bg-secondary/20 px-2 py-1 rounded">{item.status}</span>
+                </div>
+                <p className="text-muted-foreground mb-4">{item.description}</p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  {item.features.map((f, i) => <li key={i}>• {f}</li>)}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ✅ FIXED: Vision Section wrapper added */}
-      <section className="py-20 bg-muted/30">
+      {/* ROADMAP */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
+          <h2 className="font-playfair text-4xl font-bold text-center mb-16">Time & History Roadmap</h2>
+          <div className="max-w-4xl mx-auto relative">
+            <div className="absolute left-4 top-0 h-full w-[2px] bg-secondary/30" />
+            {roadmap.map((item, index) => (
+              <div key={index} className="relative pl-14 pb-12 last:pb-0">
+                <div className="absolute left-0 top-2 w-8 h-8 rounded-full bg-secondary flex items-center justify-center">
+                  <div className="w-3 h-3 bg-background rounded-full" />
+                </div>
+                <div className="glass-card rounded-2xl p-6">
+                  <span className="inline-block px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs mb-2">{item.year}</span>
+                  <h3 className="text-xl font-semibold mb-2">{item.milestone}</h3>
+                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
-            {visionImages.map((item, index) => (
-              <div
-                key={index}
-                className="aspect-square rounded-xl overflow-hidden relative group"
-              >
+      {/* YOUTH + IMAGE GALLERY */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="font-playfair text-4xl font-bold text-center mb-10">Youth & Community Goals</h2>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
+            {youthInitiatives.map((item, index) => (
+              <div key={index} className="glass-card rounded-2xl p-6">
+                <item.icon className="w-6 h-6 mb-3 text-primary" />
+                <h3 className="font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm text-muted-foreground">{item.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {allImages.map((img, i) => (
+              <div key={i} className="relative group overflow-hidden rounded-2xl shadow-lg">
                 <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  src={img}
+                  alt={formatFileName(img)}
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-
-                <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                  <p className="text-white text-sm font-medium text-center px-2">
-                    {item.title}
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity p-4">
+                  <p className="text-white text-md font-semibold text-center leading-snug">
+                    {formatFileName(img)}
                   </p>
                 </div>
               </div>
             ))}
           </div>
-
         </div>
       </section>
-      {/* Hero Section - Option 2 */}
-<section className="pt-32 pb-20 relative overflow-hidden">
-  <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10" />
-
-  <div className="container mx-auto px-4 relative">
-    <div className="max-w-4xl mx-auto text-center">
-
-      <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-6">
-        <Sparkles className="w-4 h-4 text-secondary" />
-        <span className="text-sm font-medium text-secondary">
-          Building Tomorrow
-        </span>
-      </div>
-
-      <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
-        Envisioning the <span className="gradient-text-cultural">Future of Mithila Heritage</span>
-      </h1>
-
-      <p className="text-xl text-muted-foreground leading-relaxed">
-        Rooted in tradition and driven by innovation, our future initiatives seek to bring Mithila art to a global stage. Through museums, digital archives, educational programs, and international collaborations, we are building a future where cultural heritage is not only preserved but actively celebrated and shared with the world.
+   {/* DIPLOMATIC ENGAGEMENT CTA */}
+<section className="py-20">
+  <div className="container mx-auto px-4">
+    {/* Using glass-card styling for consistency with the rest of the page */}
+    <div className="glass-card rounded-3xl p-12 text-center max-w-4xl mx-auto border border-secondary/20">
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playfair">
+        Start a Diplomatic Collaboration
+      </h2>
+      <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-10">
+        We are actively seeking new partnerships with embassies, cultural institutes, and mission offices to advance the reach of Mithila art on the global stage.
       </p>
-
+      <div className="flex flex-wrap justify-center gap-4">
+        <Button size="lg" asChild>
+          <Link to="/contact">Discuss Partnership</Link>
+        </Button>
+        <Button variant="outline" size="lg" asChild>
+          <Link to="/about">Learn Our Mission</Link>
+        </Button>
+      </div>
     </div>
   </div>
 </section>
-{/* Hero Section - Option 3 */}
-<section className="pt-32 pb-20 relative overflow-hidden">
-  <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10" />
-
-  <div className="container mx-auto px-4 relative">
-    <div className="max-w-4xl mx-auto text-center">
-
-      <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-6">
-        <Sparkles className="w-4 h-4 text-secondary" />
-        <span className="text-sm font-medium text-secondary">
-          Building Tomorrow
-        </span>
-      </div>
-
-      <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
-        Building the <span className="gradient-text-cultural">Future</span>
-      </h1>
-
-      <p className="text-xl text-muted-foreground leading-relaxed">
-        We are shaping a future where Mithila art thrives beyond borders — through global exhibitions, digital platforms, and educational initiatives that empower artists, engage communities, and preserve cultural heritage for generations to come.
-      </p>
-
-    </div>
-  </div>
-</section>
-
-
 
       <Footer />
     </div>
