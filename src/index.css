@@ -5,6 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
 /* Mithila Center USA Design System - Authentic Nepali Mithila Heritage */
 
 @layer base {

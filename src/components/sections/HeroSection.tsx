@@ -9,15 +9,15 @@ import heroArtwork5 from "@/assets/five.png";
 import heroArtwork6 from "@/assets/six.png";
 import heroArtwork7 from "@/assets/seven.png";
 
-import ImageSlider from "../sections/ImageSlider";
-
 import { GarlandMala3D } from "./GarlandMala3D";
-import { LotusFrame3D } from "./LotusFrame3D";
 import { LakshmiBloom3D } from "./LakshmiBloom3D";
 import { MithilaCD3D } from "./MithilaCD3D";
 import { PeacockMandala3D } from "./PeacockMandala3D";
 import { RamaSitaCD3D } from "./RamaSitaCD3D";
 import { SunDeity3D } from "./SunDeity3D";
+import Notebook from "./Notebook";
+import CardSlider from "./CardSlider";
+import Mission from "./misstiondemo";
 
 export const HeroSection = () => {
   const navigate = useNavigate();
@@ -150,12 +150,16 @@ export const HeroSection = () => {
 
       {/* 3D SECTION (ONLY SAFE WRAP FOR OVERFLOW) */}
       <div className="w-full overflow-hidden">
+  
         <GarlandMala3D />
         <LakshmiBloom3D />
         <MithilaCD3D />
         <PeacockMandala3D />
         <RamaSitaCD3D />
         <SunDeity3D />
+        <Notebook />
+        <CardSlider />
+        <Mission/>
       </div>
     </>
   );

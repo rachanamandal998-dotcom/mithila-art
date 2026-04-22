@@ -4,14 +4,15 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Mandala3D } from '@/components/sections/Mandala3D';
 import ImageSlider from '../components/sections/ImageSlider'
-import sdgImage from "../assets/GlobalChange.png";
+import sdgImage1 from "../assets/GlobalChange.png";
+
 
 import { Target, Leaf, Users, GraduationCap, Heart, Sun, Calendar, MapPin, Award } from 'lucide-react';
 
 
 // MAIN HERO IMAGE
-const sdgImage = "GlobalChange.png"
-  "";
+const sdgImage1 = "GlobalChange.png";
+
 
 // SDG EDITION IMAGES
 const sdgImages = {
@@ -165,7 +166,7 @@ const ArtForSDGs = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <img
-              src={sdgImage}
+              src={sdgImage1}
               alt="Mithila Art for SDGs"
               className="rounded-2xl w-full object-cover"
             />

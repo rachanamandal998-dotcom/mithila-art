@@ -1,0 +1,241 @@
+[
+  {
+    "id": 1,
+    "title": "ZERVAS ART CLUB NIGERIA",
+    "subtitle": "African Contemporary Art",
+    "location": "Lagos, Nigeria",
+    "description": "Modern African creativity blending tradition and digital expression.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLHlgxatkDkWA4Yb5hUaVwhVeROTEn9muoqw&s"},
+  {
+    "id": 2,
+    "title": "MUSIC VISUALS",
+    "subtitle": "Sound & Art Fusion",
+    "location": "Florida, USA",
+    "description": "Art inspired by music and emotional performance.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGq-SJlMEgXNCl8Sw50FNGmbKdsq8HllPZw&s"
+  },
+  {
+    "id": 3,
+    "title": "URBAN STREET ART",
+    "subtitle": "Graffiti Culture",
+    "location": "New York, USA",
+    "description": "Street walls transformed into storytelling canvases.",
+    "image": "https://t4.ftcdn.net/jpg/17/25/85/71/360_F_1725857164_pcYvZ2dEBnUYHPGx76MhyZEh2TPkdu73.jpg"
+  },
+  {
+    "id": 4,
+    "title": "DIGITAL DREAMS",
+    "subtitle": "AI Inspired Art",
+    "location": "Tokyo, Japan",
+    "description": "Exploring imagination through AI-generated visuals.",
+    "image": "https://smarthistory.org/wp-content/uploads/2021/04/Madhumala-bulldozer-scaled-1-scaled.jpg"
+  },
+  {
+    "id": 5,
+    "title": "CLASSICAL PORTRAITS",
+    "subtitle": "Renaissance Style",
+    "location": "Rome, Italy",
+    "description": "Timeless portrait art inspired by classical masters.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOxUgqi_uCxgSBaCc3nzyfLDetZYronQwi_Q&s"
+  },
+  {
+    "id": 6,
+    "title": "NATURE IMPRESSIONS",
+    "subtitle": "Landscape Art",
+    "location": "Switzerland",
+    "description": "Capturing the beauty of natural landscapes.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4H1nXbW0npe9beclocPUcvgUIPoPEfBUx3g&s"
+  },
+  {
+    "id": 7,
+    "title": "MODERN ABSTRACT",
+    "subtitle": "Color Emotion",
+    "location": "Berlin, Germany",
+    "description": "Abstract art expressing deep human emotions.",
+    "image": "https://smarthistory.org/wp-content/uploads/2021/04/cleveland-mithila.jpeg"
+  },
+  {
+    "id": 8,
+    "title": "CULTURAL HERITAGE",
+    "subtitle": "Traditional Art Forms",
+    "location": "Delhi, India",
+    "description": "Ancient culture preserved through art.",
+    "image": "https://img.atlasobscura.com/2bZF-Jrm_WUdvsFpZidnBzLX0jH5xYONqNIVSZ9x-wE/rt:fill/w:1200/el:1/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy9mZDI5MTYzNC03/ODNjLTRkYjEtOTI4/MS1jODEzZDQ0NmY3/YzQyZmRmODE4NWI1/OTY3MDZkNmZfbWl0/aGlsYS4xLm1haGFs/YXhtaS5qcGc.jpg"
+  },
+  {
+    "id": 9,
+    "title": "CYBER FUTURE",
+    "subtitle": "Tech Inspired Art",
+    "location": "Seoul, South Korea",
+    "description": "Futuristic cyber aesthetics and digital worlds.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2uQDuhZahoBzksWcCHZ_Xwp0s5P5fXa5Xyw&s"
+  },
+  {
+    "id": 10,
+    "title": "OCEAN WAVES",
+    "subtitle": "Sea Inspired Art",
+    "location": "Maldives",
+    "description": "Calm ocean-inspired visual art.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEGXmliUpssVxhfQvaC5ABvW6X_tDpB7cjNw&s"
+  },
+  {
+    "id": 11,
+    "title": "CITY LIGHTS",
+    "subtitle": "Urban Night Life",
+    "location": "Paris, France",
+    "description": "Night city glow and urban energy.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb4qSKngGPhTELM1dZ6JJ1ijFvSA1HJn32rw&s"
+  },
+  {
+    "id": 12,
+    "title": "FANTASY WORLD",
+    "subtitle": "Imagination Art",
+    "location": "London, UK",
+    "description": "Dream-like fantasy landscapes.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4FTYdsm8x6FtyS4pCczIqRzLxAl6BItmXcQ&s"
+  },
+  {
+    "id": 13,
+    "title": "DESERT MIRAGE",
+    "subtitle": "Sand & Light",
+    "location": "Dubai, UAE",
+    "description": "Desert beauty and heat illusions.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQids-diKDcvvD56EQ5zT86g6vgX_hbD5TryQ&s"
+  },
+  {
+    "id": 14,
+    "title": "FOREST SPIRIT",
+    "subtitle": "Nature Energy",
+    "location": "Amazon",
+    "description": "Deep forest mystical atmosphere.",
+    "image": "https://i.pinimg.com/1200x/75/6a/bf/756abff7954608345c3c3170796abde6.jpg"
+  },
+  {
+    "id": 15,
+    "title": "SPACE ART",
+    "subtitle": "Cosmic Visuals",
+    "location": "NASA Inspired",
+    "description": "Galaxies, stars, and cosmic imagination.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ixyzEV_k8XC4inCXQWya-yoEEHFz8d44fw&s"
+  },
+  {
+    "id": 16,
+    "title": "ANCIENT RUINS",
+    "subtitle": "History Art",
+    "location": "Greece",
+    "description": "Old civilizations preserved in art.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU3RpnIObCNkVCX_GgvEgt-ph2JUk7khPPuQ&s"
+  },
+  {
+    "id": 17,
+    "title": "STREET PORTRAITS",
+    "subtitle": "Urban People",
+    "location": "Mumbai, India",
+    "description": "Real life street emotions captured.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJtimXY41bhKt2vmCgr6YDLlKvMUAgjrC30g&s"
+  },
+  {
+    "id": 18,
+    "title": "FIRE ELEMENT",
+    "subtitle": "Energy Art",
+    "location": "Iceland",
+    "description": "Fire and volcanic energy visuals.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPEjmx45SZpw7O6OCsu6ymSJVFHFyNp2755Q&s"
+  },
+  {
+    "id": 19,
+    "title": "ICE WORLD",
+    "subtitle": "Frozen Beauty",
+    "location": "Antarctica",
+    "description": "Ice landscapes and frozen nature.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7sxsUy3JbIdIMvjkGRSUqyXYB5x3E77Ym2w&s"
+  },
+  {
+    "id": 20,
+    "title": "MOUNTAIN PEAKS",
+    "subtitle": "High Altitude Art",
+    "location": "Nepal",
+    "description": "Himalayan mountain beauty.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_yNX2YgDHQZ2Z0sBWbKA7rFvp1FSh6KDyrw&s"
+  },
+  {
+    "id": 21,
+    "title": "JUNGLE LIFE",
+    "subtitle": "Wild Nature",
+    "location": "Brazil",
+    "description": "Wild jungle ecosystem visuals.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRmGx1MkmV4AVKSUsjW-IPD5XK2wHYdv7D2w&s"
+  },
+  {
+    "id": 22,
+    "title": "NEON CITY",
+    "subtitle": "Cyber Lights",
+    "location": "Tokyo",
+    "description": "Neon glowing futuristic city.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw37mU6KeHJofTz5Td5YGYCvP3Q2bPdXa1nA&s"
+  },
+  {
+    "id": 23,
+    "title": "WATERFALL DREAM",
+    "subtitle": "Flowing Nature",
+    "location": "Iceland",
+    "description": "Powerful waterfalls in nature.",
+    "image": "https://source.unsplash.com/600x600/?waterfall"
+  },
+  {
+    "id": 24,
+    "title": "SUNSET HORIZON",
+    "subtitle": "Golden Hour",
+    "location": "Bali",
+    "description": "Sunset beauty and calm skies.",
+    "image": "https://source.unsplash.com/600x600/?sunset"
+  },
+  {
+    "id": 25,
+    "title": "RAINY STREET",
+    "subtitle": "Mood Art",
+    "location": "London",
+    "description": "Rain reflections and street lights.",
+    "image": "https://source.unsplash.com/600x600/?rain,street"
+  },
+  {
+    "id": 26,
+    "title": "SPACE STATION",
+    "subtitle": "Future Science",
+    "location": "Orbit",
+    "description": "Human life in space stations.",
+    "image": "https://source.unsplash.com/600x600/?space,station"
+  },
+  {
+    "id": 27,
+    "title": "MYSTIC TEMPLE",
+    "subtitle": "Spiritual Art",
+    "location": "Thailand",
+    "description": "Ancient spiritual architecture.",
+    "image": "https://source.unsplash.com/600x600/?temple"
+  },
+  {
+    "id": 28,
+    "title": "ROBOT WORLD",
+    "subtitle": "AI Future",
+    "location": "USA",
+    "description": "Robotics and future technology.",
+    "image": "https://source.unsplash.com/600x600/?robot"
+  },
+  {
+    "id": 29,
+    "title": "FLOWER FIELD",
+    "subtitle": "Natural Beauty",
+    "location": "Netherlands",
+    "description": "Colorful blooming flower fields.",
+    "image": "https://source.unsplash.com/600x600/?flowers"
+  },
+  {
+    "id": 30,
+    "title": "FINAL DREAM",
+    "subtitle": "Art Collection End",
+    "location": "Global",
+    "description": "The final page of creative journey.",
+    "image": "https://source.unsplash.com/600x600/?art,abstract"
+  }
+]
