@@ -2,22 +2,20 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
 import heroArtwork from "@/assets/first1.png";
 import heroArtwork4 from "@/assets/four.png";
 import heroArtwork5 from "@/assets/five.png";
 import heroArtwork6 from "@/assets/six.png";
 import heroArtwork7 from "@/assets/seven.png";
-
 import { GarlandMala3D } from "./GarlandMala3D";
 import { LakshmiBloom3D } from "./LakshmiBloom3D";
-import { MithilaCD3D } from "./MithilaCD3D";
 import { PeacockMandala3D } from "./PeacockMandala3D";
 import { RamaSitaCD3D } from "./RamaSitaCD3D";
 import { SunDeity3D } from "./SunDeity3D";
 import Notebook from "./Notebook";
 import CardSlider from "./CardSlider";
-import Mission from "./misstiondemo";
+import PokemonGallery from "./PokemonGallery";
+
 
 export const HeroSection = () => {
   const navigate = useNavigate();
@@ -148,18 +146,14 @@ export const HeroSection = () => {
         </div>
       </section>
 
-      {/* 3D SECTION (ONLY SAFE WRAP FOR OVERFLOW) */}
+    
       <div className="w-full overflow-hidden">
   
-        <GarlandMala3D />
-        <LakshmiBloom3D />
-        <MithilaCD3D />
-        <PeacockMandala3D />
-        <RamaSitaCD3D />
-        <SunDeity3D />
+      
+      
         <Notebook />
         <CardSlider />
-        <Mission/>
+        <PokemonGallery/>
       </div>
     </>
   );

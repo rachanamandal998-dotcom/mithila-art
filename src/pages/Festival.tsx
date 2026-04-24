@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, Music, Palette, Utensils, Users, Star, Camera, Award, BookOpen, Mic, Heart,  Sun } from 'lucide-react';
 import { LotusFrame3D } from '@/components/sections/LotusFrame3D';
+import { Rangoli } from '@/components/sections/Rangoli';
 
 const Festival = () => {
   const festivalHighlights = [
@@ -352,7 +353,54 @@ const Festival = () => {
 </section>
 
 
+{/* Rangoli Section */}
+<section className="py-20">
+  <div className="container mx-auto px-4">
 
+    <div className="max-w-6xl mx-auto">
+
+      {/* TEXT FIRST */}
+      <div>
+
+        {/* Decorative Title Header */}
+        <div className="mb-6">
+          <div className="flex items-center gap-3 mb-3">
+            <span className="w-12 h-1 bg-primary rounded-full"></span>
+            <span className="text-sm font-semibold uppercase tracking-widest text-primary">Traditional Art</span>
+          </div>
+
+          <h2 className="font-playfair text-4xl font-bold text-foreground">
+            Rangoli – <span className="gradient-text-primary">Art of Colors and Prosperity</span>
+          </h2>
+        </div>
+        <Rangoli />
+
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Rangoli is a vibrant traditional art form of Mithila, where intricate patterns are created on the floor 
+          using colored rice, dry flour, colored sand, or flower petals. It is more than just decoration; 
+          it is a sacred ritual performed to welcome prosperity and good fortune into the home.
+        </p>
+
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          Passed down through generations, these geometric and floral designs symbolize purity and joy. 
+          During festivals and auspicious occasions, families gather to create these colorful motifs, 
+          turning the threshold of their homes into a canvas that reflects the rich heritage and 
+          artistic soul of the Mithila community.
+        </p>
+      </div>
+
+      {/* IMAGE BELOW TEXT */}
+      <div className="mt-10 rounded-2xl overflow-hidden shadow-elevated">
+        <img
+          src="https://tse3.mm.bing.net/th/id/OIP.S4HSqcOTBhPMcDozK94xxAHaIk?w=768&h=888&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Traditional Indian Rangoli Art"
+          className="w-full h-[400px] object-cover"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* Festival Overview */}
       <section className="py-20 bg-muted/30">
