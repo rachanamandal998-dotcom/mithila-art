@@ -227,28 +227,45 @@ export default function Mission() {
           </div>
         </div>
       </section>
+{/* THEORY OF CHANGE SECTION */}
+<section className="bg-black text-white px-6 py-24">
+  <div className="max-w-4xl mx-auto text-center space-y-12">
+    
+    {/* Eyebrow and Heading */}
+    <div className="space-y-4">
+      <p className="text-yellow-400 font-bold uppercase tracking-[0.2em] text-sm">
+        Our Theory of Change
+      </p>
+      
+      {/* Hero-Style Typography: Bold, Large, and High Contrast */}
+      <h2 className="text-3xl md:text-5xl font-bold leading-tight tracking-tight">
+        Traditional Mithila Art 
+        <span className="text-yellow-400"> → </span> 
+        Empowerment of Artists 
+        <span className="text-yellow-400"> → </span> 
+        Economic Opportunity 
+        <span className="text-yellow-400"> → </span> 
+        Cultural Preservation 
+        <span className="text-yellow-400"> → </span> 
+        Global Awareness of SDGs
+      </h2>
+    </div>
 
-      {/* THEORY OF CHANGE */}
-      <section className="px-5 py-16 md:px-8 md:py-20">
-        <div className="mx-auto max-w-7xl rounded-md bg-primary p-6 text-primary-foreground shadow-xl md:p-10">
-          <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
-            <div>
-              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-secondary">Our Theory of Change</p>
-              <h2 className="mt-4 text-4xl font-extrabold md:text-6xl">
-                Traditional Mithila Art → Empowerment of Artists → Economic Opportunity → Cultural Preservation → Global Awareness of SDGs
-              </h2>
-            </div>
-            <div className="grid gap-3">
-              {visionGoals.map((goal) => (
-                <div key={goal} className="flex items-start gap-3 rounded-md border border-primary-foreground/20 bg-primary-foreground/10 p-4 font-bold">
-                  <Leaf className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
-                  <span>{goal}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+    {/* Vision Goals Grid */}
+    <div className="grid md:grid-cols-2 gap-4 text-left">
+      {visionGoals.map((goal, index) => (
+        <div 
+          key={index} 
+          className="p-6 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition-colors"
+        >
+          <p className="text-lg font-medium leading-relaxed text-white/90">
+            {goal}
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* WHERE WE WORK */}
       <section className="px-5 py-16 md:px-8 md:py-20">

@@ -8,6 +8,9 @@ import { useToast } from '@/hooks/use-toast';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Clock, Heart, Users, Building, Send, Palette, GraduationCap, Globe, Calendar } from 'lucide-react';
 
+// 1. Add your QR image import
+import WhatsAppQR from '@/assets/qr.jpg'; // <-- put your QR image path here
+
 const Contact = () => {
   const { toast } = useToast();
 
@@ -27,7 +30,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+    if (!formData.name ||!formData.email ||!formData.subject ||!formData.message) {
       toast({
         title: "Missing fields",
         description: "Please fill in all fields before sending.",
@@ -50,11 +53,18 @@ const Contact = () => {
     });
   };
 
+  // 2. Fixed the syntax error here
   const contactInfo = [
     { icon: Mail, title: "Email", details: "info@mithilacenter.org", link: "mailto:info@mithilacenter.org" },
-    { icon: Phone, title: "Phone", details: "+1 (555) 123-4567", link: "tel:+15551234567" },
-    { icon: MapPin, title: "Location", details: "New York, NY (Serving the Tri-State Area & Beyond)", link: "#" },
-    { icon: Clock, title: "Office Hours", details: "Mon-Fri: 9AM-5PM EST", link: "#" }
+    { icon: Phone, title: "Phone", details: "+977 9741667448", link: "tel:+9779741667448" },
+    {
+      icon: MapPin,
+      title: "Location",
+      details: "New York, NY (Serving the Tri-State Area & Beyond)",
+      temporaryAddress: "Kamalamai-5 Madhutar, Sindhuli", 
+      link: "#"
+    },
+    { icon: Clock, title: "Office Hours", details: "Sunday-Friday 11-6", link: "#" }
   ];
 
   const engagementOptions = [
@@ -84,7 +94,7 @@ const Contact = () => {
               Get <span className="gradient-text-primary">Involved</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Connect with Mithila Center USA to learn more about our programs, support our mission, 
+              Connect with Mithila Center USA to learn more about our programs, support our mission,
               explore partnership opportunities, or join our growing community of heritage advocates.
             </p>
           </div>
@@ -109,7 +119,7 @@ const Contact = () => {
                     </label>
                     <Input
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) => setFormData({...formData, name: e.target.value })}
                       placeholder="John Doe"
                       required
                     />
@@ -121,43 +131,60 @@ const Contact = () => {
                     <Input
                       type="email"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onChange={(e) => setFormData({...formData, email: e.target.value })}
                       placeholder="john@example.com"
                       required
                     />
                   </div>
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Subject
                   </label>
                   <Input
                     value={formData.subject}
-                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                    onChange={(e) => setFormData({...formData, subject: e.target.value })}
                     placeholder="Partnership inquiry, volunteer interest, program request..."
                     required
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Message
                   </label>
                   <Textarea
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={(e) => setFormData({...formData, message: e.target.value })}
                     placeholder="Tell us how you'd like to get involved or what you'd like to learn more about..."
                     rows={5}
                     required
                   />
                 </div>
-                
+
                 <Button type="submit" size="lg" className="w-full gap-2">
                   <Send className="w-4 h-4" />
                   Send Message
                 </Button>
               </form>
+
+              {/* 3. Added QR code section */}
+              <div className="mt-8 pt-8 border-t border-border">
+                <h3 className="font-playfair text-lg font-semibold text-foreground mb-4 text-center">
+                  Scan to Message on WhatsApp
+                </h3>
+                <div className="flex justify-center">
+                  <img
+                    src={WhatsAppQR}
+                    alt="WhatsApp QR Code"
+                    className="w-40 h-40 rounded-xl border border-border shadow-sm"
+                  />
+                </div>
+                <p className="text-xs text-muted-foreground text-center mt-3">
+                  Or click "Send Message" to open WhatsApp directly
+                </p>
+              </div>
             </div>
 
             {/* Contact Info */}
@@ -179,6 +206,11 @@ const Contact = () => {
                       <div>
                         <p className="font-semibold text-foreground">{item.title}</p>
                         <p className="text-muted-foreground">{item.details}</p>
+                        {item.temporaryAddress && (
+                          <p className="text-xs text-muted-foreground mt-1">
+                            Temp: {item.temporaryAddress}
+                          </p>
+                        )}
                       </div>
                     </a>
                   ))}
@@ -235,10 +267,10 @@ const Contact = () => {
             Ways to Engage
           </h2>
           <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-12">
-            There are many ways to support our mission and become part of the 
+            There are many ways to support our mission and become part of the
             Mithila heritage preservation movement.
           </p>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {engagementOptions.map((option, index) => (
               <div key={index} className="glass-card rounded-2xl p-8 text-center group hover:shadow-elevated transition-all">

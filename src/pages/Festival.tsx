@@ -114,7 +114,7 @@ const Festival = () => {
 
       
 {/* Laxmi Puja Hero */}
-<section className="pt-32 pb-20 relative overflow-hidden">
+<section className="pt-20 pb-10 md:pt-32 md:pb-20 relative overflow-hidden">
   <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 via-transparent to-orange-500/10" />
 
   <div className="container mx-auto px-4 relative">
@@ -157,7 +157,7 @@ const Festival = () => {
 
 
       {/* Featured Image */}
-      <section className="py-12">
+      <section className="py-6 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="aspect-video bg-muted rounded-2xl overflow-hidden relative">
@@ -180,7 +180,7 @@ const Festival = () => {
       </section>
 
 {/* Sama Chakeva Section */}
-<section className="py-20">
+<section className="py-10 md:py-20">
   <div className="container mx-auto px-4">
 
     <div className="max-w-6xl mx-auto">
@@ -203,12 +203,12 @@ const Festival = () => {
           </h2>
         </div>
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
           Sama Chakeva is a traditional Mithila festival that beautifully celebrates the bond between brothers and sisters. 
           Rooted in ancient folklore, it symbolizes love, protection, and family unity through storytelling, songs, and rituals.
         </p>
 
-        <p className="text-lg text-muted-foreground leading-relaxed">
+        <p className="text-lg text-muted-foreground leading-relaxed text-justify">
           During this festival, young girls craft symbolic clay birds representing Sama and Chakeva, 
           sing traditional folk songs, and perform rituals that express warmth, creativity, and emotional connection. 
           It reflects the deep cultural values of Mithila where family and relationships are honored with devotion and joy.
@@ -228,7 +228,7 @@ const Festival = () => {
   </div>
 </section>
 {/* Chhath Puja Section */}
-<section className="py-20">
+<section className="py-10 md:py-20">
   <div className="container mx-auto px-4">
 
     <div className="max-w-6xl mx-auto">
@@ -247,7 +247,7 @@ const Festival = () => {
           </h2>
         </div>
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
           Chhath Puja is one of the most sacred and spiritually powerful festivals of Mithila, dedicated to Surya Dev (Sun God) and Chhathi Maiya. 
           It is a festival of purity, discipline, and deep devotion, where devotees offer prayers standing in rivers and ponds during sunrise and sunset.
         </p>
@@ -271,7 +271,7 @@ const Festival = () => {
   </div>
 </section>
 {/* Jhijhiya Festival Section */}
-<section className="py-20">
+<section className="py-10 md:py-20">
   <div className="container mx-auto px-4">
     <div className="max-w-6xl mx-auto">
       
@@ -284,12 +284,12 @@ const Festival = () => {
           </h2>
         </div>
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
           Jhijhiya is a mesmerizing and mysterious folk dance tradition of the Mithila region, performed primarily by women during the Dashain festival. 
           The dancers carry intricate, perforated clay lanterns (Jhijhiya) on their heads, inside which a flame burns throughout the performance.
         </p>
 
-        <p className="text-lg text-muted-foreground leading-relaxed">
+        <p className="text-lg text-muted-foreground leading-relaxed text-justify">
           The dance is both a spiritual offering and a demonstration of focus and balance. As the women dance to the rhythm of folk music, the 
           flickering lights create an ethereal atmosphere. Jhijhiya is deeply rooted in the cultural identity of Mithila, symbolizing the 
           victory of light over darkness and the protection of the community from malevolent forces.
@@ -309,7 +309,7 @@ const Festival = () => {
   </div>
 </section>
 {/* Jur Sital Section */}
-<section className="py-20">
+<section className="py-10 md:py-20">
   <div className="container mx-auto px-4">
 
     <div className="max-w-6xl mx-auto">
@@ -328,7 +328,7 @@ const Festival = () => {
           </h2>
         </div>
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
           Jur Sital marks the traditional New Year of Mithila, symbolizing renewal, freshness, and harmony with nature. 
           It is celebrated at the beginning of the agricultural cycle, bringing hope, prosperity, and new beginnings for families and communities.
         </p>
@@ -354,7 +354,7 @@ const Festival = () => {
 
 
 {/* Rangoli Section */}
-<section className="py-20">
+<section className="py-10 md:py-20">
   <div className="container mx-auto px-4">
 
     <div className="max-w-6xl mx-auto">
@@ -375,13 +375,13 @@ const Festival = () => {
         </div>
         <Rangoli />
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
           Rangoli is a vibrant traditional art form of Mithila, where intricate patterns are created on the floor 
           using colored rice, dry flour, colored sand, or flower petals. It is more than just decoration; 
           it is a sacred ritual performed to welcome prosperity and good fortune into the home.
         </p>
 
-        <p className="text-lg text-muted-foreground leading-relaxed">
+        <p className="text-lg text-muted-foreground leading-relaxed text-justify">
           Passed down through generations, these geometric and floral designs symbolize purity and joy. 
           During festivals and auspicious occasions, families gather to create these colorful motifs, 
           turning the threshold of their homes into a canvas that reflects the rich heritage and 
@@ -403,13 +403,13 @@ const Festival = () => {
 </section>
 
       {/* Festival Overview */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-10 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="font-playfair text-4xl font-bold text-foreground mb-6">
               Experience Mithila Culture
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
               Every year, the Mithila Festival USA brings together thousands of community members, 
               artists, scholars, and culture enthusiasts for a weekend of art, music, food, and 
               celebration. The festival has grown into a multi-day hybrid program (virtual and in-person) 
@@ -607,7 +607,7 @@ const Festival = () => {
             <Button asChild size="lg" variant="secondary" className="bg-background text-primary hover:bg-background/90">
               <Link to="/contact">Get Notified</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
+            <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary hover:bg-primary-foreground/10">
               <Link to="/contact">Become a Sponsor</Link>
             </Button>
           </div>

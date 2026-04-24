@@ -85,7 +85,7 @@ const WorldTour = () => {
       <Header />
       
       {/* Hero */}
-      <section className="pt-32 pb-20 relative">
+      <section className="pt-20 pb-10 md:pt-32 md:pb-20 relative">
         <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent" />
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
@@ -105,58 +105,56 @@ const WorldTour = () => {
       </section>
 
       {/* World Tour 2025 Feature */}
-{/* World Tour 2025 Feature */}
-<section className="py-20 bg-muted/30">
-  <div className="container mx-auto px-4">
-    <div className="max-w-5xl mx-auto">
-      <div className="glass-card rounded-3xl p-8 md:p-12">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="px-4 py-2 bg-primary/10 rounded-full">
-            <span className="text-sm font-medium text-primary">Featured Initiative</span>
-          </div>
-          <div className="px-4 py-2 bg-accent/20 rounded-full">
-            <span className="text-sm font-medium text-accent-foreground">2025</span>
+      <section className="py-10 md:py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="glass-card rounded-3xl p-8 md:p-12">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="px-4 py-2 bg-primary/10 rounded-full">
+                  <span className="text-sm font-medium text-primary">Featured Initiative</span>
+                </div>
+                <div className="px-4 py-2 bg-accent/20 rounded-full">
+                  <span className="text-sm font-medium text-accent-foreground">2025</span>
+                </div>
+              </div>
+              
+              <h2 className="font-playfair text-3xl font-bold text-foreground mb-4">
+                {worldTour2025.title}
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                {worldTour2025.description}
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Tour Objectives */}
+                <div>
+                  <h3 className="font-semibold text-foreground mb-4">Tour Objectives</h3>
+                  <ul className="space-y-3">
+                    {worldTour2025.goals.map((goal, index) => (
+                      <li key={index} className="flex items-start gap-3 text-muted-foreground">
+                        <Star className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                        {goal}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Updated Image */}
+                <div className="aspect-[4/3] bg-muted rounded-xl overflow-hidden relative">
+                  <img
+                    src="https://i.imgur.com/5BfMzx7.jpeg"
+                    alt="World Tour Promotional"
+                    className="w-full h-full object-cover rounded-xl"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <h2 className="font-playfair text-3xl font-bold text-foreground mb-4">
-          {worldTour2025.title}
-        </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-          {worldTour2025.description}
-        </p>
-        
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Tour Objectives */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">Tour Objectives</h3>
-            <ul className="space-y-3">
-              {worldTour2025.goals.map((goal, index) => (
-                <li key={index} className="flex items-start gap-3 text-muted-foreground">
-                  <Star className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  {goal}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Updated Image */}
-          <div className="aspect-[4/3] bg-muted rounded-xl overflow-hidden relative">
-            <img
-              src="https://i.imgur.com/5BfMzx7.jpeg"
-              alt="World Tour Promotional"
-              className="w-full h-full object-cover rounded-xl"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Tour Concept */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-4xl font-bold text-foreground text-center mb-6">
             The Global Tour Concept
@@ -203,7 +201,7 @@ const WorldTour = () => {
       </section>
 
       {/* Featured Events */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-10 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-4xl font-bold text-foreground text-center mb-12">
             Featured 2025 Events
@@ -240,7 +238,7 @@ const WorldTour = () => {
       </section>
 
       {/* Future Destinations */}
-      <section className="py-20">
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-4xl font-bold text-foreground text-center mb-6">
             Future Destinations
@@ -275,31 +273,32 @@ const WorldTour = () => {
         </div>
       </section>
 
-      {/* World Map Placeholder */}
-      <section className="py-20 bg-muted/30">
+      {/* Our Global Footprint - Updated with Mithila Image */}
+      <section className="py-10 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-4xl font-bold text-foreground text-center mb-12">
             Our Global Footprint
           </h2>
           
-          <div className="aspect-[2/1] bg-muted rounded-2xl overflow-hidden relative max-w-5xl mx-auto">
-            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-secondary/5 to-primary/5">
-              <div className="text-center p-8">
-                <Globe className="w-24 h-24 text-secondary/30 mx-auto mb-4" />
-                <p className="text-muted-foreground font-inter">
-                  [Interactive World Map Placeholder]
-                </p>
-                <p className="text-sm text-muted-foreground mt-2">
-                  Showing tour locations and planned destinations
-                </p>
-              </div>
+          <div className="aspect-[2/1] rounded-2xl overflow-hidden relative max-w-5xl mx-auto shadow-elevated group">
+            <img
+              src="https://exchange4media.gumlet.io/news-photo/133086-MaithiliThakur.jpg"
+              alt="Mithila Painting Krishna Radha - Global Heritage"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+              <p className="text-white/90 text-sm uppercase tracking-wider mb-2">Mithila Art Goes Global</p>
+              <p className="text-white font-playfair text-xl md:text-2xl font-semibold">
+                From Janakpur to the World: Taking Heritage Across Continents
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Tour Gallery */}
-      <section className="py-20">
+      {/* Tour Gallery - Updated with Mithila Images */}
+      <section className="py-10 md:py-20">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-4xl font-bold text-foreground text-center mb-12">
             Tour Highlights
@@ -307,18 +306,41 @@ const WorldTour = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {[
-              "Master Artist S.C. Suman",
-              "Exhibition Setup",
-              "Opening Ceremony",
-              "Visitor Engagement",
-              "Workshop Session",
-              "Cultural Performance"
+              {
+                img: "https://i.imgur.com/KUjfr4D.jpeg",
+                title: "Master Artist S.C. Suman"
+              },
+              {
+                img: "https://i.imgur.com/TTENiK2.jpeg", 
+                title: "Exhibition Setup"
+              },
+              {
+                img: "https://i.imgur.com/bobu3b1.jpeg",
+                title: "Opening Ceremony"
+              },
+              {
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8fsp4EnZhGPxWsRyVhzHV3cy27vzuIXemHw&s",
+                title: "Visitor Engagement"
+              },
+              {
+                img: "https://i.imgur.com/cqkzwxb.jpeg",
+                title: "Workshop Session"
+              },
+              {
+                img: "https://upload.wikimedia.org/wikipedia/commons/8/83/Sama_Chakeva_Sarlahi_2.jpg",
+                title: "Cultural Performance"
+              }
             ].map((item, index) => (
-              <div key={index} className="aspect-[4/3] bg-muted rounded-xl overflow-hidden relative group">
-                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-secondary/5 to-primary/5">
-                  <p className="text-muted-foreground text-sm font-inter text-center px-4">
-                    [{item} Photo]
-                  </p>
+              <div key={index} className="aspect-[4/3] rounded-xl overflow-hidden relative group">
+                <img 
+                  src={item.img} 
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <p className="text-white text-sm font-medium">{item.title}</p>
+                  </div>
                 </div>
                 <div className="absolute inset-0 bg-foreground/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <ExternalLink className="w-8 h-8 text-background" />
@@ -336,7 +358,7 @@ const WorldTour = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-peacock text-secondary-foreground">
+      <section className="py-10 md:py-20 bg-gradient-peacock text-secondary-foreground">
         <div className="container mx-auto px-4 text-center">
           <Plane className="w-16 h-16 mx-auto mb-6 opacity-80" />
           <h2 className="font-playfair text-3xl font-bold mb-6">
@@ -350,7 +372,7 @@ const WorldTour = () => {
             <Button asChild size="lg" variant="secondary" className="bg-background text-secondary hover:bg-background/90">
               <Link to="/contact">Partner With Us</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground/10">
+            <Button asChild size="lg" variant="outline" className="border-secondary-foreground text-secondary hover:bg-secondary-foreground/10">
               <Link to="/art-for-sdgs">Learn About Art for SDGs</Link>
             </Button>
           </div>

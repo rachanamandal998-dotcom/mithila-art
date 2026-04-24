@@ -7,14 +7,10 @@ import heroArtwork4 from "@/assets/four.png";
 import heroArtwork5 from "@/assets/five.png";
 import heroArtwork6 from "@/assets/six.png";
 import heroArtwork7 from "@/assets/seven.png";
-import { GarlandMala3D } from "./GarlandMala3D";
-import { LakshmiBloom3D } from "./LakshmiBloom3D";
-import { PeacockMandala3D } from "./PeacockMandala3D";
-import { RamaSitaCD3D } from "./RamaSitaCD3D";
-import { SunDeity3D } from "./SunDeity3D";
 import Notebook from "./Notebook";
 import CardSlider from "./CardSlider";
 import PokemonGallery from "./PokemonGallery";
+import Mission from "./Misstiondemo";
 
 
 export const HeroSection = () => {
@@ -150,7 +146,7 @@ export const HeroSection = () => {
       <div className="w-full overflow-hidden">
   
       
-      
+   
         <Notebook />
         <CardSlider />
         <PokemonGallery/>
