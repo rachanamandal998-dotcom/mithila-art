@@ -120,7 +120,7 @@ const Contact = () => {
                     <Input
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value })}
-                      placeholder="John Doe"
+                      placeholder=""
                       required
                     />
                   </div>
@@ -132,7 +132,7 @@ const Contact = () => {
                       type="email"
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value })}
-                      placeholder="john@example.com"
+                      placeholder="Rachana@example.com"
                       required
                     />
                   </div>
@@ -172,18 +172,26 @@ const Contact = () => {
               {/* 3. Added QR code section */}
               <div className="mt-8 pt-8 border-t border-border">
                 <h3 className="font-playfair text-lg font-semibold text-foreground mb-4 text-center">
-                  Scan to Message on WhatsApp
-                </h3>
-                <div className="flex justify-center">
-                  <img
-                    src={WhatsAppQR}
-                    alt="WhatsApp QR Code"
-                    className="w-40 h-40 rounded-xl border border-border shadow-sm"
-                  />
-                </div>
-                <p className="text-xs text-muted-foreground text-center mt-3">
-                  Or click "Send Message" to open WhatsApp directly
-                </p>
+  Support Our Mission
+</h3>
+
+<div className="flex justify-center">
+  <img
+    src={WhatsAppQR}
+    alt="Donation QR Code"
+    className="w-40 h-40 rounded-xl border border-border shadow-sm"
+  />
+</div>
+
+<p className="text-sm text-muted-foreground  mt-4 leading-relaxed text-justify ">
+  Your generous contribution helps us preserve and promote the rich heritage of Mithila art and culture. 
+  Scan the QR code using your preferred mobile banking or digital wallet app to make a secure donation.
+</p>
+
+<p className="text-xs text-muted-foreground text-justify mt-2">
+  For alternative donation methods or assistance, please contact us via WhatsApp using the form above.
+</p>
+
               </div>
             </div>
 
