@@ -179,17 +179,22 @@ export default function Mission() {
 
               <motion.p
                 variants={fadeUp}
-                className="mx-auto md:mx-0 mt-6 max-w-xl text-base sm:text-lg md:text-xl text-paper/85 leading-relaxed"
+                className="mx-auto md:mx-0 mt-6 max-w-xl text-base text-justify sm:text-lg md:text-xl text-paper/85 leading-relaxed"
               >
-                Guided by ancient wisdom, driven by modern purpose—using art as a force
-                for creativity, sustainability, and community resilience.
+                Guided by ancient wisdom, driven by modern purpose—using art as a force for creativity, sustainability, and community resilience.
               </motion.p>
 
               <motion.div variants={fadeUp} className="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
-                <Button className="bg-red-400" variant="heritage" size="xl" asChild>
+                <Button style={{
+      backgroundImage:
+        "linear-gradient(135deg, hsl(var(--peacock-blue)) 0%, hsl(var(--orchid-purple)) 100%)",
+    }} variant="heritage" size="xl" asChild>
                   <a href="#mission-content">Explore Mission</a>
                 </Button>
-                <Button className="bg-red-400" variant="art" size="xl" asChild>
+                <Button style={{
+      backgroundImage:
+        "linear-gradient(135deg, hsl(var(--peacock-blue)) 0%, hsl(var(--orchid-purple)) 100%)",
+    }} variant="art" size="xl" asChild>
                   <a href="#join-movement">Join Movement</a>
                 </Button>
               </motion.div>

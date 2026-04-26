@@ -100,7 +100,7 @@ const UNEngagement = () => {
             <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
               UN & Diplomatic <span className="gradient-text-cultural">Engagement</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed text-justify max-w-3xl mx-auto hyphens-auto">
               A defining feature of Mithila Center USA is its deep partnership with United Nations 
               institutions and diplomatic missions, bringing Mithila art to the world's most important 
               platforms for cultural diplomacy and sustainable development dialogue.
@@ -173,7 +173,7 @@ const UNEngagement = () => {
           <h2 className="font-playfair text-4xl font-bold text-foreground text-center mb-6">
             Diplomatic & Government Partners
           </h2>
-          <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-16">
+          <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-16 md:text-justify hyphens-auto">
             Our exhibitions and programs have been supported or hosted by major government 
             bodies and cultural institutions, underscoring our role as a cultural partner in 
             city and state-level diplomacy around heritage and sustainability.

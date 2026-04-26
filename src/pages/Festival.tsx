@@ -134,7 +134,7 @@ const Festival = () => {
           Laxmi Puja in <span className="gradient-text-primary">Mithila Tradition</span>
         </h1>
 
-        <p className="text-xl text-muted-foreground leading-relaxed text-justify">
+        <p className="text-xl text-muted-foreground leading-relaxed md:text-justify hyphens-auto">
           Laxmi Puja is one of the most sacred festivals in Mithila culture, dedicated to Goddess Lakshmi,
           the symbol of wealth, prosperity, and abundance. Celebrated with deep devotion across Maithil households,
           this festival beautifully blends spirituality with artistic expression. Traditional Mithila paintings,
@@ -203,12 +203,12 @@ const Festival = () => {
           </h2>
         </div>
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4 md:text-justify hyphens-auto">
           Sama Chakeva is a traditional Mithila festival that beautifully celebrates the bond between brothers and sisters. 
           Rooted in ancient folklore, it symbolizes love, protection, and family unity through storytelling, songs, and rituals.
         </p>
 
-        <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+        <p className="text-lg text-muted-foreground leading-relaxed md:text-justify hyphens-auto">
           During this festival, young girls craft symbolic clay birds representing Sama and Chakeva, 
           sing traditional folk songs, and perform rituals that express warmth, creativity, and emotional connection. 
           It reflects the deep cultural values of Mithila where family and relationships are honored with devotion and joy.
@@ -247,12 +247,12 @@ const Festival = () => {
           </h2>
         </div>
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4 md:text-justify hyphens-auto">
           Chhath Puja is one of the most sacred and spiritually powerful festivals of Mithila, dedicated to Surya Dev (Sun God) and Chhathi Maiya. 
           It is a festival of purity, discipline, and deep devotion, where devotees offer prayers standing in rivers and ponds during sunrise and sunset.
         </p>
 
-        <p className="text-lg text-muted-foreground leading-relaxed">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4 md:mb-4 md:text-justify hyphens-auto">
           This ancient ritual symbolizes gratitude toward nature, life energy, and cosmic balance. Families observe strict fasting, prepare traditional offerings,
           and gather at riverbanks with devotion, making Chhath Puja one of the most powerful expressions of faith and environmental harmony in Mithila culture.
         </p>
@@ -284,12 +284,12 @@ const Festival = () => {
           </h2>
         </div>
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4 md:text-justify hyphens-auto">
           Jhijhiya is a mesmerizing and mysterious folk dance tradition of the Mithila region, performed primarily by women during the Dashain festival. 
           The dancers carry intricate, perforated clay lanterns (Jhijhiya) on their heads, inside which a flame burns throughout the performance.
         </p>
 
-        <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+        <p className="text-lg text-muted-foreground leading-relaxed md:text-justify hyphens-auto">
           The dance is both a spiritual offering and a demonstration of focus and balance. As the women dance to the rhythm of folk music, the 
           flickering lights create an ethereal atmosphere. Jhijhiya is deeply rooted in the cultural identity of Mithila, symbolizing the 
           victory of light over darkness and the protection of the community from malevolent forces.
@@ -328,12 +328,12 @@ const Festival = () => {
           </h2>
         </div>
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4 md:text-justify hyphens-auto">
           Jur Sital marks the traditional New Year of Mithila, symbolizing renewal, freshness, and harmony with nature. 
           It is celebrated at the beginning of the agricultural cycle, bringing hope, prosperity, and new beginnings for families and communities.
         </p>
 
-        <p className="text-lg text-muted-foreground leading-relaxed">
+        <p className="text-lg text-muted-foreground leading-relaxed md:text-justify hyphens-auto">
           On this day, elders bless younger members with cool water and good wishes for health and happiness. 
           Traditional foods, cultural rituals, and family gatherings define this festival, making it a beautiful expression of Mithila’s connection with nature, agriculture, and seasonal balance.
         </p>
@@ -375,13 +375,13 @@ const Festival = () => {
         </div>
         <Rangoli />
 
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4 md:text-justify hyphens-auto">
           Rangoli is a vibrant traditional art form of Mithila, where intricate patterns are created on the floor 
           using colored rice, dry flour, colored sand, or flower petals. It is more than just decoration; 
           it is a sacred ritual performed to welcome prosperity and good fortune into the home.
         </p>
 
-        <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+        <p className="text-lg text-muted-foreground leading-relaxed md:text-justify hyphens-auto">
           Passed down through generations, these geometric and floral designs symbolize purity and joy. 
           During festivals and auspicious occasions, families gather to create these colorful motifs, 
           turning the threshold of their homes into a canvas that reflects the rich heritage and 
@@ -409,7 +409,7 @@ const Festival = () => {
             <h2 className="font-playfair text-4xl font-bold text-foreground mb-6">
               Experience Mithila Culture
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+            <p className="text-lg text-muted-foreground leading-relaxed md:text-justify hyphens-auto">
               Every year, the Mithila Festival USA brings together thousands of community members, 
               artists, scholars, and culture enthusiasts for a weekend of art, music, food, and 
               celebration. The festival has grown into a multi-day hybrid program (virtual and in-person) 

@@ -108,7 +108,7 @@ const Programs = () => {
             <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
               Programs & <span className="gradient-text-primary">Community</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-muted-foreground text-left md:text-justify  hyphens-auto leading-relaxed">
               Beyond headline festivals and exhibitions, Mithila Center USA runs comprehensive 
               educational workshops, community initiatives, and programs that make us not just an 
               exhibition organizer, but a community education hub rooted in art and social consciousness.
@@ -157,7 +157,7 @@ const Programs = () => {
 
       {/* Main Programs */}
       <section className="py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 text-left md:text-justify  hyphens-auto">
           <h2 className="font-playfair text-4xl font-bold text-foreground text-center mb-6">
             Youth & Community Programs
           </h2>

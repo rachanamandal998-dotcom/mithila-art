@@ -137,30 +137,22 @@ const Future = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
-      <section className="pt-32 pb-20 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-6">
-          <Sparkles className="w-4 h-4 text-secondary" />
-          <span className="text-sm font-medium text-secondary">Building Tomorrow</span>
-        </div>
+<section className="pt-32 pb-20 text-center px-4">
+  <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full mb-6">
+    <Sparkles className="w-4 h-4 text-secondary" />
+    <span className="text-sm font-medium text-secondary">Building Tomorrow</span>
+  </div>
 
-        <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
-          Future <span className="gradient-text-cultural">Initiatives</span>
-        </h1>
+  <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
+    Future <span className="gradient-text-cultural">Initiatives</span>
+  </h1>
 
-        <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-          Our ambitious vision for preserving and promoting Mithila heritage for generations
-          to come, including landmark institutions, global expansion, and digital innovation.
-        </p>
+  <p className="max-w-3xl mx-auto text-xl text-muted-foreground leading-relaxed text-left md:text-justify hyphens-auto">
+    Our ambitious vision for preserving and promoting Mithila heritage for generations
+    to come, including landmark institutions, global expansion, and digital innovation.
+  </p>
+</section>
 
-        <div className="container mx-auto px-4">
-          <img
-            src={museumImage}
-            alt="Future Vision"
-            className="w-full max-w-5xl mx-auto rounded-2xl"
-          />
-        </div>
-      </section>
 {/* IMPACT METRICS */}
 <section className="py-12 bg-muted/20 border-y border-muted/30">
   <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">

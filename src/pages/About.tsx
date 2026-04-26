@@ -15,9 +15,8 @@ import {
 } from 'lucide-react';
 import { motion } from "framer-motion";
 
-// ✅ FIX: SectionHeading was missing (added without changing your content)
 const SectionHeading = ({ eyebrow, title }: { eyebrow: string; title: string }) => (
-  <div className="text-center mb-10">
+  <div className="text-center mb-10 px-4"> {/* Added px-4 here */}
     <p className="text-sm uppercase tracking-widest text-muted-foreground">
       {eyebrow}
     </p>
@@ -116,21 +115,20 @@ const About = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 to-background" />
         </div>
 
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
             About <span
-  className="bg-clip-text text-transparent"
-  style={{
-    backgroundImage:
-      "linear-gradient(135deg, hsl(var(--peacock-blue)) 0%, hsl(var(--orchid-purple)) 100%)",
-  }}
->
-  Mithila Center USA
-</span>
-
+              className="bg-clip-text text-transparent"
+              style={{
+                backgroundImage:
+                  "linear-gradient(135deg, hsl(var(--peacock-blue)) 0%, hsl(var(--orchid-purple)) 100%)",
+              }}
+            >
+              Mithila Center USA
+            </span>
           </h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            A nonprofit cultural organization based in New York, dedicated to preserving, promoting, 
+          <p className="text-xl text-muted-foreground leading-relaxed text-left md:text-justify max-w-3xl mx-auto hyphens-auto">
+            A nonprofit cultural organization based in New York, dedicated to preserving, promoting,
             and globalizing the living heritage of the Mithila region of southern Nepal and northern India.
           </p>
         </div>
@@ -138,36 +136,39 @@ const About = () => {
 
       {/* STORY */}
       <section className="py-20">
-        <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
 
           <div className="aspect-[4/3] rounded-2xl overflow-hidden">
             <img src={images.story} className="w-full h-full object-cover" />
           </div>
 
-          <div>
+          <div className="px-2 sm:px-0"> {/* Extra padding for mobile text */}
             <h2 className="font-playfair text-3xl font-bold mb-6">Our Story</h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-left md:text-justify hyphens-auto">
               <p>
                 Mithila Center USA (also known as Mithila Art & Culture Center) was established by
-                a passionate group of Maithil diaspora members who recognized the urgent need to 
+                a passionate group of Maithil diaspora members who recognized the urgent need to
                 preserve their ancestral art and culture in a rapidly globalizing world.
               </p>
+
               <p>
                 Through festivals, exhibitions, educational programs, and international collaborations,
-                the Center uses art and culture as a bridge between communities and as a platform for 
-                social impact. Since 2019, we have been organizing the Mithila Festival USA, major art 
-                exhibitions, and community events that bring together artists, scholars, diaspora 
+                the Center uses art and culture as a bridge between communities and as a platform for
+                social impact. Since 2019, we have been organizing the Mithila Festival USA, major art
+                exhibitions, and community events that bring together artists, scholars, diaspora
                 communities, and global audiences.
               </p>
+
               <p>
-                Mithila art, also known as Madhubani painting, is one of the oldest art forms in the world, 
-                with a history spanning over three millennia. Traditionally created by women on the mud walls 
-                of their homes, these paintings depict mythology, nature, and daily life using natural dyes 
+                Mithila art, also known as Madhubani painting, is one of the oldest art forms in the world,
+                with a history spanning over three millennia. Traditionally created by women on the mud walls
+                of their homes, these paintings depict mythology, nature, and daily life using natural dyes
                 and distinctive geometric patterns.
               </p>
+
               <p>
-                Our flagship program, <strong>"Art for SDGs: The Mithila Heritage"</strong>, connects traditional 
-                Mithila/Madhubani art with the United Nations Sustainable Development Goals (SDGs), positioning 
+                Our flagship program, <strong>"Art for SDGs: The Mithila Heritage"</strong>, connects traditional
+                Mithila/Madhubani art with the United Nations Sustainable Development Goals (SDGs), positioning
                 culture as a driver for global awareness and change.
               </p>
             </div>
@@ -184,11 +185,11 @@ const About = () => {
 
       {/* WHAT WE DO */}
       <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4 text-center mb-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
           <h2 className="font-playfair text-4xl font-bold">What We Do</h2>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-6 container mx-auto px-4">
+        <div className="grid md:grid-cols-4 gap-6 container mx-auto px-4 sm:px-6 lg:px-8">
           {[
             { icon: Sparkles, title: "Festivals", desc: "Annual cultural celebrations" },
             { icon: Globe, title: "UN Engagement", desc: "Global exhibitions & diplomacy" },
@@ -208,14 +209,14 @@ const About = () => {
       <section className="py-20 mithila-pattern">
         <SectionHeading eyebrow="Timeline" title="Journey of Mithila Art" />
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {timeline.map((item, index) => (
             <div key={index} className="relative pl-8 pb-12 border-l-2 border-primary/30">
-              <div className="absolute left-0 w-4 h-4 -translate-x-[9px] rounded-full bg-primary" />
+              <div className="absolute left-0 w-4 h-4 -translate-x- rounded-full bg-primary" />
               <div className="glass-card p-6 rounded-xl">
                 <span className="text-primary font-semibold">{item.year}</span>
-                <h3 className="font-playfair text-xl font-semibold">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
+                <h3 className="font-playfair text-xl font-semibold mt-1">{item.title}</h3>
+                <p className="text-muted-foreground mt-2 text-left md:text-justify hyphens-auto">{item.description}</p>
               </div>
             </div>
           ))}
@@ -224,7 +225,7 @@ const About = () => {
 
       {/* KEY FACTS */}
       <section className="py-20">
-        <div className="container mx-auto px-4 grid md:grid-cols-3 gap-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-6">
           {keyFacts.map((fact, i) => (
             <div key={i} className="glass-card p-6 rounded-2xl text-center">
               <fact.icon className="w-10 h-10 mx-auto mb-4 text-primary" />
@@ -237,7 +238,7 @@ const About = () => {
 
       {/* PARTNERS */}
       <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-playfair text-4xl font-bold mb-10">Our Partners & Collaborators</h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -252,7 +253,7 @@ const About = () => {
 
       {/* GALLERY */}
       <section className="py-20">
-        <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.gallery.map((img, i) => (
             <img key={i} src={img} className="rounded-xl object-cover aspect-square" />
           ))}
@@ -260,9 +261,9 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-sindoor text-primary-foreground text-center">
+      <section className="py-20 bg-gradient-sindoor text-primary-foreground text-center px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-4">Join Our Cultural Movement</h2>
-        <p className="mb-6">Help preserve Mithila heritage for future generations.</p>
+        <p className="mb-6 max-w-2xl mx-auto">Help preserve Mithila heritage for future generations.</p>
 
         <div className="flex justify-center gap-4">
           <Button asChild variant="secondary">
