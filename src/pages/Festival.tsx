@@ -3,7 +3,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, Music, Palette, Utensils, Users, Star, Camera, Award, BookOpen, Mic, Heart,  Sun } from 'lucide-react';
-import { LotusFrame3D } from '@/components/sections/LotusFrame3D';
+import { LotusFrame3D } from '../components/sections/LotusFrame3D';
 import { Rangoli } from '@/components/sections/Rangoli';
 
 const Festival = () => {

@@ -7,10 +7,8 @@ import heroArtwork4 from "@/assets/four.png";
 import heroArtwork5 from "@/assets/five.png";
 import heroArtwork6 from "@/assets/six.png";
 import heroArtwork7 from "@/assets/seven.png";
-import Notebook from "./Notebook";
-import CardSlider from "./CardSlider";
-import PokemonGallery from "./PokemonGallery";
-import Mission from "./Misstiondemo";
+
+
 
 
 export const HeroSection = () => {
@@ -147,9 +145,9 @@ export const HeroSection = () => {
   
       
    
-        <Notebook />
-        <CardSlider />
-        <PokemonGallery/>
+      
+
+       
       </div>
     </>
   );

@@ -9,12 +9,12 @@ export default function CardSlider() {
     // ... (your data remains exactly the same)
     { entity: "NYC Mayor's Office", type: "Mayoral Proclamation", title: "Mithila Culture and Festival Day", description: "Official proclamation declaring 'Mithila Culture and Festival Day' to celebrate South Asian heritage.", year: "Multiple Years", significance: "Citywide recognition", image: "https://i.imgur.com/FVXUrx4.jpeg" },
     { entity: "U.S. Congress", type: "Congressional Proclamation", title: "Honoring Mithila Festival USA", description: "Presented by Congresswoman Grace Meng during the 2021 festival.", year: "2021", significance: "Federal cultural recognition", image: "https://i.imgur.com/C6bBY95.jpeg" },
-    { entity: "New York State Senate", type: "State Senate Recognition", title: "Mithila Art & Heritage Preservation", description: "Recognition for preserving Mithila painting traditions.", year: "2022", significance: "State-level cultural honor", image: "https://i.imgur.com/8Km9tLL.jpeg" },
-    { entity: "NYC Council", type: "City Council Citation", title: "Multicultural Unity Contribution", description: "Honoring contribution to NYC cultural diversity.", year: "2020", significance: "Local government appreciation", image: "https://i.imgur.com/YuKQ8Qm.jpeg" },
-    { entity: "Queens Borough President", type: "Borough Proclamation", title: "Celebration of Mithila Festival", description: "Recognizing annual Mithila cultural festival.", year: "2019", significance: "Borough cultural recognition", image: "https://i.imgur.com/XR7mX7p.jpeg" },
-    { entity: "South Asian Cultural Council", type: "Cultural Excellence Award", title: "Global Promotion of Mithila Art", description: "Awarded for promoting Mithila art worldwide.", year: "2023", significance: "International recognition", image: "https://i.imgur.com/6vW0Q0g.jpeg" },
-    { entity: "Community Leadership Forum", type: "Leadership Honor", title: "Unity Through Cultural Festivals", description: "Recognized for leadership in cultural unity programs.", year: "2024", significance: "Community leadership excellence", image: "https://i.imgur.com/2DhmtJ4.jpeg" },
-    { entity: "Asian Heritage Foundation", type: "Heritage Award", title: "Preserving South Asian Traditions", description: "Honoring efforts in heritage preservation.", year: "2023", significance: "Cultural preservation award", image: "https://i.imgur.com/FVXUrx4.jpeg" },
+    { entity: "New York State Senate", type: "State Senate Recognition", title: "Mithila Art & Heritage Preservation", description: "Recognition for preserving Mithila painting traditions.", year: "2022", significance: "State-level cultural honor", image: "https://superdesk-pro-c.s3.amazonaws.com/sd-nepalitimes/2022111015118/636d05d29c7e80680e0a5f2cjpeg.jpg" },
+    { entity: "NYC Council", type: "City Council Citation", title: "Multicultural Unity Contribution", description: "Honoring contribution to NYC cultural diversity.", year: "2020", significance: "Local government appreciation", image: "https://img1.wsimg.com/isteam/ip/a29fdc5c-5a9f-4a58-b68c-60db7dbc65b0/4%20Option.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" },
+    { entity: "Queens Borough President", type: "Borough Proclamation", title: "Celebration of Mithila Festival", description: "Recognizing annual Mithila cultural festival.", year: "2019", significance: "Borough cultural recognition", image: "https://www.enepalese.com/wp-content/uploads/2019/04/image7-800x534.jpeg" },
+    { entity: "South Asian Cultural Council", type: "Cultural Excellence Award", title: "Global Promotion of Mithila Art", description: "Awarded for promoting Mithila art worldwide.", year: "2023", significance: "International recognition", image: "https://www.undp.org/sites/g/files/zskgke326/files/2025-01/img_7281.jpg" },
+    { entity: "Community Leadership Forum", type: "Leadership Honor", title: "Unity Through Cultural Festivals", description: "Recognized for leadership in cultural unity programs.", year: "2024", significance: "Community leadership excellence", image: "https://unityinc.org/wp-content/uploads/2025/08/Screenshot-2025-08-05-at-3.38.31-PM.png" },
+    { entity: "Asian Heritage Foundation", type: "Heritage Award", title: "Preserving South Asian Traditions", description: "Honoring efforts in heritage preservation.", year: "2023", significance: "Cultural preservation award", image: "https://npcdn.ratopati.com/media/news/kanchanban-holi-parikarma-scaled-1_4QtFaarpEp.jpg" },
   ];
 
   // 1. Detect screen size and update visible count
@@ -42,7 +42,7 @@ export default function CardSlider() {
   const next = () => setIndex((p) => (p === maxIndex ? 0 : p + 1));
 
   return (
-    <div className="w-full min-h-screen flex items-center justify-center bg-[#dfe3f0] relative px-4 overflow-hidden">
+    <div className="w-full min-h-screen flex items-center justify-center bg-[#f7f2e4] relative px-4 overflow-hidden">
       
       {/* LEFT BUTTON - Hide on very small mobile for cleaner UI if needed */}
       <button onClick={prev} className="absolute left-2 md:left-4 text-3xl md:text-5xl z-10 bg-white/50 p-2 rounded-full shadow">

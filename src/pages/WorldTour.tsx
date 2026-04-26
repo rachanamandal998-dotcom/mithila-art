@@ -3,6 +3,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Globe, MapPin, Calendar, Users, ExternalLink, Star, Plane, Building, Handshake } from 'lucide-react';
+import BookGallery from '@/components/sections/BookGallery';
 
 const WorldTour = () => {
   const worldTour2025 = {
@@ -103,6 +104,8 @@ const WorldTour = () => {
           </div>
         </div>
       </section>
+                <BookGallery />
+          
 
       {/* World Tour 2025 Feature */}
       <section className="py-10 md:py-20 bg-muted/30">
@@ -163,7 +166,7 @@ const WorldTour = () => {
             Our touring initiative goes beyond exhibitions to create comprehensive cultural 
             experiences that educate, inspire, and connect communities worldwide.
           </p>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {tourConcept.map((item, index) => (
               <div key={index} className="glass-card rounded-2xl p-6 text-center group hover:shadow-elevated transition-all">
@@ -282,7 +285,7 @@ const WorldTour = () => {
           
           <div className="aspect-[2/1] rounded-2xl overflow-hidden relative max-w-5xl mx-auto shadow-elevated group">
             <img
-              src="https://exchange4media.gumlet.io/news-photo/133086-MaithiliThakur.jpg"
+              src="https://images.firstpost.com/wp-content/uploads/large_file_plugin/2020/03/1583161654_Mithila_9.jpg"
               alt="Mithila Painting Krishna Radha - Global Heritage"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />

@@ -118,7 +118,16 @@ const About = () => {
 
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
-            About <span className="gradient-text-primary">Mithila Center USA</span>
+            About <span
+  className="bg-clip-text text-transparent"
+  style={{
+    backgroundImage:
+      "linear-gradient(135deg, hsl(var(--peacock-blue)) 0%, hsl(var(--orchid-purple)) 100%)",
+  }}
+>
+  Mithila Center USA
+</span>
+
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
             A nonprofit cultural organization based in New York, dedicated to preserving, promoting, 
@@ -259,7 +268,7 @@ const About = () => {
           <Button asChild variant="secondary">
             <Link to="/contact">Get Involved</Link>
           </Button>
-          <Button asChild variant="outline">
+          <Button asChild variant="secondary">
             <Link to="/mission">Our Mission</Link>
           </Button>
         </div>
