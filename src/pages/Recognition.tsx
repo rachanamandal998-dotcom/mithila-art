@@ -116,7 +116,7 @@ function Mithila3DMandala() {
                     : i % 4 === 2
                     ? "linear-gradient(180deg, var(--leaf), var(--indigo))"
                     : "linear-gradient(180deg, var(--lotus), var(--leaf))",
-                boxShadow: "0 8px 24px -6px rgba(0,0,0,0.5)",
+                boxShadow: "0 8px 24px -6px rgba(0,0.5)",
                 opacity: 0.92,
               }}
             />
@@ -139,7 +139,7 @@ function Mithila3DMandala() {
                 marginTop: "-44px",
                 transform: `rotateZ(${i * 45}deg) translateY(-50px) rotateX(45deg)`,
                 background: "linear-gradient(180deg, var(--lotus), var(--heritage))",
-                boxShadow: "0 6px 18px -5px rgba(0,0,0,0.4)",
+                boxShadow: "0 6px 18px -5px rgba(0,0,0.4)",
               }}
             />
           ))}
@@ -204,7 +204,7 @@ function Mithila3DMandala() {
               width: "112px",
               height: "112px",
               background: "radial-gradient(circle at 35% 30%, var(--lotus), var(--heritage) 55%, var(--indigo))",
-              boxShadow: "0 0 50px 12px color-mix(in oklab, var(--lotus) 40%, transparent), 0 0 100px 30px color-mix(in oklab, var(--heritage) 20%, transparent), inset 0 0 20px rgba(255,255,255,0.2)",
+              boxShadow: "0 0 50px 12px color-mix(in oklab, var(--lotus) 40%, transparent), 0 0 100px 30px color-mix(in oklab, var(--heritage) 20%, transparent), inset 0 20px rgba(255,255,0.2)",
               fontFamily: "var(--font-display)",
             }}
             animate={{ rotateZ: [0, 0] }}
@@ -376,7 +376,7 @@ export default function Recognition() {
     <Header/>
     <div className="min-h-screen bg-background text-foreground">
 
-      {/* HERO - WorldTour style */}
+      {/* HERO - Festival page text style */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-20 overflow-hidden">
           <img
@@ -391,7 +391,7 @@ export default function Recognition() {
         <div className="absolute inset-x-0 top-0 h-2 mithila-border" />
         <div className="absolute inset-x-0 bottom-0 h-2 mithila-border" />
 
-        <div className="container mx-auto grid gap-12 px-6 py-20 md:py-24 lg:grid-cols-2 lg:items-center lg:py-32">
+        <div className="container mx-auto grid gap-12 px-4 py-20 md:py-24 lg:grid-cols-2 lg:items-center lg:py-32">
           <motion.div initial="hidden" animate="show" variants={stagger} className="text-paper">
             <motion.div
               variants={fadeUp}
@@ -403,14 +403,10 @@ export default function Recognition() {
 
             <motion.h1
               variants={fadeUp}
-              className="font-display text-5xl leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl"
-              style={{ fontFamily: "var(--font-display)" }}
+              className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6"
             >
               Recognition{" "}
-              <span
-                className="bg-clip-text text-transparent"
-                style={{ backgroundImage: "linear-gradient(120deg, var(--lotus), #ffd9a8, var(--leaf))" }}
-              >
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 &amp; Honors
               </span>
             </motion.h1>
@@ -421,7 +417,7 @@ export default function Recognition() {
               and empowering today's artists, scholars, and communities.
             </motion.p>
 
-            <motion.div variants={fadeUp} className="mt-10 flex flex-wrap gap-4">
+            <motion.div variants={fadeUp} className="mt-10 flex-wrap gap-4">
               <Button variant="heritage" size="xl" asChild>
                 <Link to="/"><Trophy className="h-5 w-5" /> Explore Partnership</Link>
               </Button>
@@ -437,7 +433,7 @@ export default function Recognition() {
         </div>
       </section>
 
-      {/* GALLERY STRIP — Mithila art images */}
+      {/* GALLERY STRIP — Festival text style */}
       <section className="overflow-hidden border-y border-border">
         <motion.div
           className="flex"
@@ -478,7 +474,7 @@ export default function Recognition() {
         </motion.div>
       </section>
 
-      {/* MILESTONES - WorldTour style */}
+      {/* MILESTONES - Festival text style */}
       <section className="border-b border-border bg-paper/60 backdrop-blur">
         <div className="container mx-auto grid grid-cols-2 gap-8 px-6 py-12 md:grid-cols-4">
           {milestones.map((m, i) => (
@@ -491,7 +487,7 @@ export default function Recognition() {
               className="text-center"
             >
               <div
-                className="font-display text-4xl font-bold sm:text-5xl"
+                className="font-playfair text-4xl font-extrabold sm:text-5xl"
                 style={{
                   backgroundImage: "linear-gradient(135deg, var(--heritage), var(--lotus))",
                   WebkitBackgroundClip: "text",
@@ -508,8 +504,8 @@ export default function Recognition() {
         </div>
       </section>
 
-      {/* PROCLAMATIONS - WorldTour text style */}
-      <section className="container mx-auto px-6 py-10 md:py-24">
+      {/* PROCLAMATIONS - Festival text style */}
+      <section className="container mx-auto px-4 py-10 md:py-24">
         <motion.div
           initial="hidden" whileInView="show" viewport={{ once: true }} variants={stagger}
           className="mx-auto mb-16 max-w-3xl text-center"
@@ -517,7 +513,7 @@ export default function Recognition() {
           <motion.div variants={fadeUp} className="mb-4 inline-flex items-center gap-2 rounded-full bg-heritage/10 px-4 py-1.5 text-sm font-semibold text-heritage">
             <Award className="h-4 w-4" /> Government Proclamations
           </motion.div>
-          <motion.h2 variants={fadeUp} className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
+          <motion.h2 variants={fadeUp} className="font-playfair text- font-extrabold tracking-tight">
             Honored by Cities, States &amp; Nations
           </motion.h2>
           <motion.p variants={fadeUp} className="mt-5 text-lg text-muted-foreground">
@@ -560,7 +556,7 @@ export default function Recognition() {
 
                 <div className="p-6">
                   <p className="text-xs font-semibold uppercase tracking-widest text-heritage">{p.type}</p>
-                  <h3 className="mt-2 font-display text-xl font-bold leading-snug text-foreground">{p.title}</h3>
+                  <h3 className="mt-2 font-playfair text-xl font-bold leading-snug text-foreground">{p.title}</h3>
                   <p className="mt-1 text-sm font-medium text-muted-foreground">{p.entity}</p>
                   <p className="mt-3 text-sm leading-relaxed text-foreground/80">{p.detail}</p>
                   <div className="mt-4 flex gap-1">
@@ -575,7 +571,7 @@ export default function Recognition() {
         </motion.div>
       </section>
 
-      {/* FEATURED ART BANNER */}
+      {/* FEATURED ART BANNER - Festival text style */}
       <section className="relative overflow-hidden py-10 md:py-20">
         <div className="absolute inset-0 -z-10">
           <img
@@ -585,7 +581,7 @@ export default function Recognition() {
             style={{ filter: "brightness(0.35) saturate(1.6)" }}
           />
         </div>
-        <div className="container mx-auto px-6 text-center text-paper">
+        <div className="container mx-auto px-4 text-center text-paper">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -595,7 +591,7 @@ export default function Recognition() {
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest" style={{ color: "var(--lotus)" }}>
               The Living Art of Mithila
             </p>
-            <h2 className="font-display text-4xl font-bold sm:text-5xl lg:text-6xl">
+            <h2 className="font-playfair text- font-extrabold">
               Every Line Tells a Sacred Story
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-paper/80">
@@ -607,10 +603,10 @@ export default function Recognition() {
         </div>
       </section>
 
-      {/* OFFICIAL EVENTS - WorldTour text style */}
+      {/* OFFICIAL EVENTS - Festival text style */}
       <section className="relative overflow-hidden py-10 md:py-24">
         <div className="absolute inset-0 -z-10 art-paper opacity-60" />
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4">
           <motion.div
             initial="hidden" whileInView="show" viewport={{ once: true }} variants={stagger}
             className="mx-auto mb-16 max-w-3xl text-center"
@@ -622,7 +618,7 @@ export default function Recognition() {
             >
               <Globe2 className="h-4 w-4" /> Official Events
             </motion.div>
-            <motion.h2 variants={fadeUp} className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
+            <motion.h2 variants={fadeUp} className="font-playfair text- font-extrabold tracking-tight">
               Stages of Diplomacy &amp; Heritage
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-5 text-lg text-muted-foreground">
@@ -663,7 +659,7 @@ export default function Recognition() {
                           <Icon className="h-6 w-6" />
                         </div>
                         <div>
-                          <h3 className="font-display text-xl font-bold text-white">{e.title}</h3>
+                          <h3 className="font-playfair text-xl font-bold text-white">{e.title}</h3>
                           <p className="text-sm text-white/75">
                             {e.venue} · <span style={{ color: "var(--lotus)" }}>{e.year}</span>
                           </p>
@@ -680,8 +676,8 @@ export default function Recognition() {
         </div>
       </section>
 
-      {/* PARTNERSHIPS */}
-      <section className="container mx-auto px-6 py-10 md:py-24">
+      {/* PARTNERSHIPS - Festival text style */}
+      <section className="container mx-auto px-4 py-10 md:py-24">
         <motion.div
           initial="hidden" whileInView="show" viewport={{ once: true }} variants={stagger}
           className="mx-auto mb-16 max-w-3xl text-center"
@@ -693,7 +689,7 @@ export default function Recognition() {
           >
             <Users className="h-4 w-4" /> Partnerships
           </motion.div>
-          <motion.h2 variants={fadeUp} className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
+          <motion.h2 variants={fadeUp} className="font-playfair text- font-extrabold tracking-tight">
             A Network of Cultural Allies
           </motion.h2>
           <motion.p variants={fadeUp} className="mt-5 text-lg text-muted-foreground">
@@ -728,10 +724,10 @@ export default function Recognition() {
         </motion.div>
       </section>
 
-      {/* MEDIA */}
+      {/* MEDIA - Festival text style */}
       <section className="relative overflow-hidden py-10 md:py-24">
         <div className="absolute inset-0 -z-10" style={{ background: "var(--gradient-page)" }} />
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-4">
           <motion.div
             initial="hidden" whileInView="show" viewport={{ once: true }} variants={stagger}
             className="mx-auto mb-14 max-w-3xl text-center"
@@ -743,7 +739,7 @@ export default function Recognition() {
             >
               <Newspaper className="h-4 w-4" /> Media Coverage
             </motion.div>
-            <motion.h2 variants={fadeUp} className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
+            <motion.h2 variants={fadeUp} className="font-playfair text- font-extrabold tracking-tight">
               In the Press
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-4 text-lg text-muted-foreground">
@@ -751,7 +747,7 @@ export default function Recognition() {
             </motion.p>
           </motion.div>
 
-         <motion.ul
+          <motion.ul
             initial="hidden" whileInView="show" viewport={{ once: true }} variants={stagger}
             className="mx-auto max-w-3xl divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card shadow-art-card"
           >
@@ -771,7 +767,7 @@ export default function Recognition() {
                     />
                   </div>
                   <div>
-                    <p className="font-display text-lg font-bold text-foreground">{m.outlet}</p>
+                    <p className="font-playfair text-lg font-bold text-foreground">{m.outlet}</p>
                     <p className="text-sm text-muted-foreground">{m.topic}</p>
                   </div>
                 </div>
@@ -782,8 +778,8 @@ export default function Recognition() {
         </div>
       </section>
 
-      {/* CTA - WorldTour style */}
-      <section className="container mx-auto px-6 pb-24">
+      {/* CTA - Festival page text style */}
+      <section className="container mx-auto px-4 pb-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -818,7 +814,7 @@ export default function Recognition() {
           />
 
           <Sparkles className="mx-auto h-10 w-10 text-[var(--lotus)]" />
-          <h2 className="mt-6 font-display text-4xl font-bold leading-tight sm:text-5xl">
+          <h2 className="mt-6 font-playfair text- font-extrabold leading-tight">
             Join the Movement to Honor Mithila
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-paper/85">
