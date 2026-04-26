@@ -3,15 +3,13 @@ import { Footer } from '@/components/layout/Footer';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Mandala3D } from '@/components/sections/Mandala3D';
-import ImageSlider from '../components/sections/ImageSlider'
+
 import sdgImage1 from "../assets/GlobalChange.png";
 
 
 import { Target, Leaf, Users, GraduationCap, Heart, Sun, Calendar, MapPin, Award } from 'lucide-react';
 
 
-// MAIN HERO IMAGE
-const sdgImage1 = "GlobalChange.png";
 
 
 // SDG EDITION IMAGES
@@ -249,8 +247,8 @@ const ArtForSDGs = () => {
         </div>
       </section>
 
-      {/* Gallery */}
-     <ImageSlider />
+   
+    
 
       {/* CTA */}
       <section className="py-20 bg-gradient-sindoor text-white text-center">

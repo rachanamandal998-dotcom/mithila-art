@@ -20,6 +20,8 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Card } from "@/components/ui/card";
 import CardSlider from "@/components/sections/CardSlider";
+import globalChangeImg from "../assets/GlobalChange4.png";
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -257,27 +259,40 @@ export default function Mission() {
             </div>
           </div>
         </section>
+<section className="px-10 py-16 sm:py-20 md:py-24">
+  <div className="container mx-auto grid items-center gap-10 lg:grid-cols-2">
 
-        {/* VALUES */}
-        <section className="px-4 py-10 sm:py-16 md:py-24">
-          <div className="container mx-auto">
-            <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-heritage">Our Values</p>
-                <h2 className="mt-4 font-playfair text- font-extrabold tracking-tight leading-tight">Rooted in authenticity. Built for impact.</h2>
-              </div>
-              <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
-                {values.map((value) => (
-                  <article key={value.title} className="rounded-2xl border border-border bg-card p-6 shadow-art-card">
-                    <value.icon className="mb-4 h-8 w-8 text-heritage" />
-                    <h3 className="font-playfair text-2xl font-bold text-foreground">{value.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-foreground/80">{value.description}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+    {/* LEFT SIDE TEXT */}
+    <div className="text-left">
+      <p className="text-xs font-semibold uppercase tracking-widest text-heritage">
+        Our Values
+      </p>
+
+      <h2 className="mt-4 font-playfair text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">
+        Rooted in authenticity. Built for impact.
+      </h2>
+
+      <p className="mt-6 text-sm sm:text-base t text-foreground/80 leading-relaxed max-w-xl">
+        Mithila art connects heritage with global change, empowering communities,
+        promoting sustainability, and transforming traditional expression into
+        modern impact.
+      </p>
+    </div>
+
+    {/* RIGHT SIDE IMAGE */}
+    <div className="relative flex justify-center lg:justify-end">
+      <img
+        src={globalChangeImg}
+        alt="Global Change Mithila Art"
+        className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-xl object-cover"
+      />
+
+      <div className="absolute -inset-4 bg-gradient-to-tr from-heritage/20 to-indigo/20 blur-3xl -z-10 rounded-full" />
+    </div>
+
+  </div>
+</section>
+
 
         {/* THEORY OF CHANGE */}
         <section className="px-4 py-10 sm:py-16 md:py-24">

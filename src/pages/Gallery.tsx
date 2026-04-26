@@ -3,7 +3,8 @@ import { Footer } from '@/components/layout/Footer';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { Camera, Video, Filter, X, Play, Image, Calendar, MapPin } from 'lucide-react';
+import { Camera, Video, Filter, X, Play, Image, Calendar, MapPin, Import } from 'lucide-react';
+import ImageSlider from "../components/sections/ImageSlider"  
 
 const Gallery = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -75,12 +76,12 @@ const Gallery = () => {
     : galleryItems.filter(item => item.category === activeFilter);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-yellow-50">
       <Header />
       
       {/* Hero */}
       <section className="pt-32 pb-12 rice-paper-texture">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 ">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
               <span className="gradient-text-primary">Gallery</span>
@@ -93,6 +94,7 @@ const Gallery = () => {
           </div>
         </div>
       </section>
+       <ImageSlider />
 
       {/* Filters */}
       <section className="py-6 border-b border-border sticky top-16 bg-background/95 backdrop-blur-md z-40">
