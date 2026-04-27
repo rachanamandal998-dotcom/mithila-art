@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { Heart, Mail, MapPin, Phone, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 import borderPattern from '@/assets/mithila-border-pattern.png';
+import { Link } from 'react-router-dom';
+
 
 const footerLinks = {
   programs: [
@@ -54,10 +56,17 @@ export const Footer = () => {
                 empower communities through art education.
               </p>
             </div>
-            <Button variant="donate" size="xl" className="gap-3 flex-shrink-0">
-              <Heart className="w-5 h-5" />
-              Donate Now
-            </Button>
+           <Link to="/contact">
+  <Button
+    variant="donate"
+    size="xl"
+    className="gap-3 flex-shrink-0"
+  >
+    <Heart className="w-5 h-5" />
+    Donate Now
+  </Button>
+</Link>
+
           </div>
           
           {/* Decorative elements */}

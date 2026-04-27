@@ -490,6 +490,7 @@ export default function Recognition() {
                   Mithila Art
                 </span>
               </motion.h1>
+<div className="px-10">
 
               <motion.p
                 variants={fadeUp}
@@ -499,10 +500,11 @@ export default function Recognition() {
                 women. This platform showcases its global recognition, cultural
                 impact, and artistic legacy..
               </motion.p>
+              </div>
 
               <motion.div
                 variants={fadeUp}
-                className="mt-10 flex flex-col sm:flex-row flex-wrap gap-4 justify-center md:justify-start"
+                className="mt-10 px-4 flex flex-col sm:flex-row flex-wrap gap-4 justify-center md:justify-start"
               >
                 <Button
                   variant="heritage"
