@@ -104,7 +104,9 @@ const WorldTour = () => {
           </div>
         </div>
       </section>
+   
                 <BookGallery />
+            
           
 
       {/* World Tour 2025 Feature */}
