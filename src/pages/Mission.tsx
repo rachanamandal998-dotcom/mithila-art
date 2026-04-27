@@ -96,22 +96,50 @@ function SectionHeading({ eyebrow, title }: { eyebrow: string; title: string }) 
 
 function Mithila3DOrb() {
   const petals = Array.from({ length: 12 });
+
   return (
-    <div className="pointer-events-none absolute -bottom-10 -right-4 hidden h-56 w-56 [transform-style:preserve-3d] md:block" aria-hidden="true">
+    <div
+      className="pointer-events-none absolute -bottom-6 -right-4
+                 block h-24 w-24 sm:h-32 sm:w-32 md:h-56 md:w-56
+                 [transform-style:preserve-3d]"
+      aria-hidden="true"
+    >
       <div className="relative h-full w-full animate-[spin_18s_linear_infinite]">
+
         {petals.map((_, index) => (
           <div
             key={index}
-            className="absolute left-1/2 top-1/2 h-24 w-10 origin-[50%_112px] rounded-full border border-foreground/30 bg-secondary/80 shadow-lg"
-            style={{ transform: `translate(-50%, -100%) rotateZ(${index * 30}deg) translateZ(${index % 2? 26 : -26}px)` }}
+            className="absolute left-1/2 top-1/2
+                       h-12 w-4 sm:h-14 sm:w-6 md:h-24 md:w-10
+                       origin-[50%_5%]
+                       rounded-full border border-foreground/30
+                       bg-secondary/80 shadow-lg"
+            style={{
+              transform: `
+                translate(-50%, -20%)
+                rotateZ(${index * 30}deg)
+                translateZ(${index % 2 ? 10 : -10}px)
+              `,
+            }}
           />
         ))}
-        <div className="absolute left-1/2 top-1/2 h-20 w-20 -translate-x-1/2 -translate-y-1/2 rounded-full border border-foreground/30 bg-secondary shadow-lg" />
-        <div className="absolute left-1/2 top-1/2 h-9 w-9 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary" />
+
+        {/* center ring */}
+        <div className="absolute left-1/2 top-1/2
+                        h-10 w-10 sm:h-11 sm:w-12 md:h-20 md:w-20
+                        -translate-x-1/2 -translate-y-1/2
+                        rounded-full border border-foreground/30 bg-secondary shadow-lg" />
+
+        {/* core dot */}
+        <div className="absolute left-1/2 top-1/2
+                        h-4 w-4 sm:h-5 sm:w-5 md:h-9 md:w-9
+                        -translate-x-1/2 -translate-y-1/2
+                        rounded-full bg-primary" />
       </div>
     </div>
   );
 }
+
 
 export default function Mission() {
   return (
