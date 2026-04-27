@@ -17,7 +17,7 @@ const RegisterFestivalPage = () => {
           className="text-center mb-12"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-playfair mb-4">
-            Festival Registration
+           Registration
           </h1>
           <p className="text-muted-foreground text-sm sm:text-base">
             Join the Mithila Festival USA and experience culture, art, and tradition.

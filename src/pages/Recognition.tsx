@@ -477,7 +477,7 @@ export default function Recognition() {
 
               <motion.h1
                 variants={fadeUp}
-                className="font-playfair px-10 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6"
+                className="font-playfair px-4 sm:px-6 md:px-10 text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold leading-snug sm:leading-tight tracking-tight mb-6"
               >
                 Global Recognition of{" "}
                 <span
@@ -490,16 +490,16 @@ export default function Recognition() {
                   Mithila Art
                 </span>
               </motion.h1>
-<div className="px-10">
 
-              <motion.p
-                variants={fadeUp}
-                className="mt-6 mx-auto max-w-xl px-4 sm:px-6 md:px-0 text-base sm:text-lg md:text-xl text-paper/85 leading-relaxed text-justify hyphens-auto"
-              >
-                Mithila art is a sacred tradition passed through generations of
-                women. This platform showcases its global recognition, cultural
-                impact, and artistic legacy..
-              </motion.p>
+              <div className="px-4 sm:px-6 md:px-10">
+                <motion.p
+                  variants={fadeUp}
+                  className="mt-6 mx-auto max-w-xl text-sm sm:text-base md:text-lg lg:text-xl text-paper/85 leading-relaxed sm:leading-loose text-left sm:text-justify hyphens-auto"
+                >
+                  Mithila art is a sacred tradition passed through generations
+                  of women. This platform showcases its global recognition,
+                  cultural impact, and artistic legacy.
+                </motion.p>
               </div>
 
               <motion.div
@@ -512,7 +512,7 @@ export default function Recognition() {
                   className="gap-2 bg-red-400"
                   asChild
                 >
-                  <Link to="/partner">
+                  <Link to="/contact">
                     <Trophy className="h-5 w-5" />
                     <span>Explore Partnership</span>
                   </Link>

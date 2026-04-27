@@ -1,7 +1,7 @@
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { useState } from 'react';
-import { Camera, Filter, X, Play } from 'lucide-react';
+import { Filter, Play } from 'lucide-react';
 import ImageSlider from "../components/sections/ImageSlider";
 
 // ✅ Extract YouTube thumbnail automatically
@@ -39,71 +39,71 @@ const Gallery = () => {
     { id: 10, category: 'festival', title: 'Cultural Performances', imageUrl: "https://i.imgur.com/MVoHTOQ.jpeg" }
   ];
 
-  const featuredVideos = [
-    {
-      title: "The Art of Mithila Painting",
-      description: "Traditional Mithila painting documentary",
-      duration: "15:30",
-      category: "Documentary",
-      link: "https://youtu.be/v4i1I97YRkE"
-    },
-    {
-      title: "Mithila Festival USA Highlights 2024",
-      description: "Festival highlights compilation",
-      duration: "8:45",
-      category: "Festival",
-      link: "https://youtu.be/FN6cOcNxHOw"
-    },
-    {
-      title: "Master Artist Interview",
-      description: "Interview with S.C. Suman",
-      duration: "12:20",
-      category: "Interview",
-      link: "https://youtu.be/hpVxc1yJSt0"
-    },
-    {
-      title: "Art for SDGs at UN",
-      description: "UN exhibition coverage",
-      duration: "10:15",
-      category: "Exhibition",
-      link: "https://youtu.be/fsEc7keWv1g"
-    },
-    {
-      title: "Mithila Workshop Nepal",
-      description: "Hands-on painting workshop",
-      duration: "9:40",
-      category: "Workshop",
-      link: "https://youtu.be/DSHuvOj0B1w"
-    },
-    {
-      title: "Europe World Tour",
-      description: "International exhibition highlights",
-      duration: "11:25",
-      category: "World Tour",
-      link: "https://youtu.be/obNMe-INJ2U"
-    },
-    {
-      title: "Women Artists of Mithila",
-      description: "Empowering women painters",
-      duration: "13:10",
-      category: "Documentary",
-      link: "https://youtu.be/tb3ptgQf3mQ"
-    },
-    {
-      title: "Festival Culture Night",
-      description: "Dance and cultural performances",
-      duration: "7:55",
-      category: "Festival",
-      link: "https://youtu.be/5Mxdg6aVQfI"
-    },
-    {
-      title: "UN SDG Installation Walkthrough",
-      description: "Art installation tour",
-      duration: "10:05",
-      category: "Exhibition",
-      link: "https://youtu.be/HP7eQ-jTmdE"
-    }
-  ];
+ const featuredVideos = [
+  {
+    title: "The Art of Mithila Painting",
+    description: "Traditional Mithila painting documentary",
+    duration: "15:30",
+    category: "Documentary",
+    link: "https://youtu.be/v4i1I97YRkE"
+  },
+  {
+    title: "Mithila Festival USA Highlights 2024",
+    description: "Festival highlights compilation",
+    duration: "8:45",
+    category: "Festival",
+    link: "https://youtu.be/FN6cOcNxHOw"
+  },
+  {
+    title: "Master Artist Interview",
+    description: "Interview with S.C. Suman",
+    duration: "12:20",
+    category: "Interview",
+    link: "https://youtu.be/hpVxc1yJSt0"
+  },
+  {
+    title: "Art for SDGs at UN",
+    description: "UN exhibition coverage",
+    duration: "10:15",
+    category: "Exhibition",
+    link: "https://youtu.be/fsEc7keWv1g"
+  },
+  {
+    title: "Mithila Workshop Nepal",
+    description: "Hands-on painting workshop",
+    duration: "9:40",
+    category: "Workshop",
+    link: "https://youtu.be/DSHuvOj0B1w"
+  },
+  {
+    title: "Europe World Tour",
+    description: "International exhibition highlights",
+    duration: "11:25",
+    category: "World Tour",
+    link: "https://youtu.be/obNMe-INJ2U"
+  },
+  {
+    title: "Women Artists of Mithila",
+    description: "Empowering women painters",
+    duration: "13:10",
+    category: "Documentary",
+    link: "https://youtu.be/tb3ptgQf3mQ"
+  },
+  {
+    title: "Festival Culture Night",
+    description: "Dance and cultural performances",
+    duration: "7:55",
+    category: "Festival",
+    link: "https://youtu.be/5Mxdg6aVQfI"
+  },
+  {
+    title: "UN SDG Installation Walkthrough",
+    description: "Art installation tour",
+    duration: "10:05",
+    category: "Exhibition",
+    link: "https://youtu.be/HP7eQ-jTmdE"
+  }
+];
 
   const filteredItems =
     activeFilter === 'all'
@@ -112,12 +112,15 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen bg-yellow-50">
+
       <Header />
 
       {/* HERO */}
-      <section className="pt-32 pb-12 text-center">
-        <h1 className="text-5xl font-bold mb-2">Gallery</h1>
-        <p className="text-gray-600">
+      <section className="pt-28 sm:pt-32 pb-10 text-center px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">
+          Gallery
+        </h1>
+        <p className="text-sm sm:text-base text-gray-600">
           Explore Mithila art, festivals, SDGs & exhibitions
         </p>
       </section>
@@ -126,13 +129,14 @@ const Gallery = () => {
 
       {/* FILTERS */}
       <section className="py-6 border-b">
-        <div className="container mx-auto px-4 flex gap-2 overflow-x-auto">
-          <Filter />
+        <div className="container mx-auto px-4 flex gap-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
+          <Filter className="shrink-0" />
+
           {filters.map(filter => (
             <button
               key={filter.id}
               onClick={() => setActiveFilter(filter.id)}
-              className={`px-4 py-2 rounded-full ${
+              className={`px-3 py-2 text-sm sm:text-base rounded-full transition ${
                 activeFilter === filter.id
                   ? 'bg-black text-white'
                   : 'bg-gray-200'
@@ -146,29 +150,36 @@ const Gallery = () => {
 
       {/* IMAGE GALLERY */}
       <section className="py-10">
-        <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+
           {filteredItems.map(item => (
-            <div key={item.id} className="relative group">
+            <div key={item.id} className="relative group overflow-hidden rounded-lg">
+
               <img
                 src={item.imageUrl}
-                className="w-full h-40 object-cover rounded-lg"
+                className="w-full h-32 sm:h-40 md:h-44 object-cover transition-transform group-hover:scale-105"
                 alt={item.title}
               />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white transition">
+
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-xs sm:text-sm text-center px-2 transition">
                 {item.title}
               </div>
+
             </div>
           ))}
+
         </div>
       </section>
 
       {/* VIDEOS */}
-      <section className="py-16 bg-gray-100">
-        <h2 className="text-3xl text-center mb-10 font-bold">
+      <section className="py-14 bg-gray-100">
+
+        <h2 className="text-2xl sm:text-3xl md:text-4xl text-center mb-10 font-bold px-4">
           Featured Videos
         </h2>
 
-        <div className="container mx-auto px-4 grid md:grid-cols-3 gap-6">
+        <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+
           {featuredVideos.map((video, index) => (
             <a
               key={index}
@@ -177,8 +188,10 @@ const Gallery = () => {
               rel="noopener noreferrer"
               className="bg-white rounded-xl overflow-hidden shadow hover:scale-105 transition block group"
             >
-              {/* ✅ THUMBNAIL FIX */}
+
+              {/* THUMBNAIL */}
               <div className="h-40 relative">
+
                 <img
                   src={getYouTubeThumbnail(video.link)}
                   alt={video.title}
@@ -186,25 +199,50 @@ const Gallery = () => {
                 />
 
                 <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition">
-                  <Play className="text-white w-10 h-10" />
+                  <Play className="text-white w-8 h-8 sm:w-10 sm:h-10" />
                 </div>
 
                 <span className="absolute bottom-2 right-2 text-xs bg-black/70 text-white px-2 py-1 rounded">
                   {video.duration}
                 </span>
+
               </div>
 
-              <div className="p-4">
+              {/* TEXT */}
+              <div className="p-3 sm:p-4">
+
                 <p className="text-xs text-blue-600">{video.category}</p>
-                <h3 className="font-semibold">{video.title}</h3>
-                <p className="text-sm text-gray-500">{video.description}</p>
+
+                <h3 className="font-semibold text-sm sm:text-base md:text-lg leading-snug">
+                  {video.title}
+                </h3>
+
+                <p className="text-xs sm:text-sm text-gray-500">
+                  {video.description}
+                </p>
+
               </div>
+
             </a>
           ))}
+
         </div>
+
       </section>
 
       <Footer />
+
+      {/* SCROLL HIDE CSS */}
+      <style>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
+
     </div>
   );
 };

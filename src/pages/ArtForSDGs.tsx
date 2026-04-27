@@ -1,28 +1,31 @@
-import { Header } from '@/components/layout/Header';
-import { Footer } from '@/components/layout/Footer';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Mandala3D } from '@/components/sections/Mandala3D';
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Mandala3D } from "@/components/sections/Mandala3D";
 
-
-
-
-import { Target, Leaf, Users, GraduationCap, Heart, Sun, Calendar, MapPin, Award } from 'lucide-react';
-
-
-
+import {
+  Target,
+  Leaf,
+  Users,
+  GraduationCap,
+  Heart,
+  Sun,
+  Calendar,
+  MapPin,
+  Award,
+} from "lucide-react";
 
 // SDG EDITION IMAGES
 const sdgImages = {
   "2022": "https://i.imgur.com/xKiTFYr.jpeg",
   "2023": "https://i.imgur.com/susAJ7N.jpeg",
   "2024": "https://i.imgur.com/KlKJiOe.jpeg",
-  "2025": "https://i.imgur.com/7DUDzIQ.jpeg"
+  "2025": "https://i.imgur.com/7DUDzIQ.jpeg",
 };
 
 // UN SECTION IMAGE
-const unImage =
-  "https://i.imgur.com/4bTBcSh.jpeg";
+const unImage = "https://i.imgur.com/4bTBcSh.jpeg";
 
 // GALLERY IMAGES
 const galleryImages = [
@@ -33,12 +36,10 @@ const galleryImages = [
   "https://i.imgur.com/MVoHTOQ.jpeg",
   "https://i.imgur.com/lrx3uQx.jpeg",
   "https://i.imgur.com/DPjOc9U.jpeg",
-  "https://i.imgur.com/Bix4ku5.jpeg"
+  "https://i.imgur.com/Bix4ku5.jpeg",
 ];
 
-
 const ArtForSDGs = () => {
-  
   const sdgEditions = [
     {
       year: "2022",
@@ -46,7 +47,7 @@ const ArtForSDGs = () => {
       theme: "Education Through Art",
       description:
         "The 2022 festival edition highlighted education through themed artworks and exhibitions, emphasizing access to learning and empowerment via art.",
-      color: "bg-red-600"
+      color: "bg-red-600",
     },
     {
       year: "2023",
@@ -54,7 +55,7 @@ const ArtForSDGs = () => {
       theme: "Women's Voices in Art",
       description:
         "The 2023 festival focused on Gender Equality, with most participating artists being women and artworks depicting voices of justice and empowerment.",
-      color: "bg-orange-500"
+      color: "bg-orange-500",
     },
     {
       year: "2024",
@@ -62,7 +63,7 @@ const ArtForSDGs = () => {
       theme: "Art for Climate Awareness",
       description:
         "At the UN Headquarters, artworks depicted drought, extreme weather, and community struggles, using folk art as a climate storytelling tool.",
-      color: "bg-green-600"
+      color: "bg-green-600",
     },
     {
       year: "2025",
@@ -70,8 +71,8 @@ const ArtForSDGs = () => {
       theme: "Biodiversity & Environmental Stewardship",
       description:
         "The 2025 Festival explores biodiversity, nature, and environmental stewardship through children's workshops and exhibitions.",
-      color: "bg-green-500"
-    }
+      color: "bg-green-500",
+    },
   ];
 
   const programComponents = [
@@ -79,45 +80,45 @@ const ArtForSDGs = () => {
       icon: Target,
       title: "SDG-Themed Exhibitions",
       description:
-        "Curated exhibitions featuring artworks that visually communicate Sustainable Development Goals using Mithila motifs."
+        "Curated exhibitions featuring artworks that visually communicate Sustainable Development Goals using Mithila motifs.",
     },
     {
       icon: GraduationCap,
       title: "Educational Workshops",
       description:
-        "Hands-on workshops connecting traditional painting techniques with sustainability and SDG learning."
+        "Hands-on workshops connecting traditional painting techniques with sustainability and SDG learning.",
     },
     {
       icon: Users,
       title: "Community Programming",
       description:
-        "Panels, talks, and cultural events uniting artists, scholars, policymakers, and community members."
+        "Panels, talks, and cultural events uniting artists, scholars, policymakers, and community members.",
     },
     {
       icon: Award,
       title: "Artist Recognition",
       description:
-        "Awards highlighting artists whose work addresses SDG themes, especially women and youth."
+        "Awards highlighting artists whose work addresses SDG themes, especially women and youth.",
     },
     {
       icon: Heart,
       title: "Art Auctions",
       description:
-        "Fundraising events supporting artists and expanding SDG-aligned cultural programs."
+        "Fundraising events supporting artists and expanding SDG-aligned cultural programs.",
     },
     {
       icon: Leaf,
       title: "Environmental Awareness",
       description:
-        "Programs that promote climate action, biodiversity, and environmental sustainability through art."
-    }
+        "Programs that promote climate action, biodiversity, and environmental sustainability through art.",
+    },
   ];
 
   const impactStats = [
     { value: "4+", label: "SDGs Addressed Annually" },
     { value: "100+", label: "Artists Engaged" },
     { value: "1,000+", label: "Workshop Participants" },
-    { value: "5+", label: "Countries Reached" }
+    { value: "5+", label: "Countries Reached" },
   ];
 
   return (
@@ -125,39 +126,39 @@ const ArtForSDGs = () => {
       <Header />
 
       {/* Hero */}
-{/* Hero */}
-<section className="pt-32 pb-20 relative">
-  <div className="container mx-auto px-4">
+      {/* Hero */}
+      <section className="pt-32 pb-20 relative">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            {/* LEFT SIDE - TEXT */}
+            <div className="text-left">
+              <h1 className="font-playfair text-5xl font-bold">
+                Mithila Art for{" "}
+                <span className="gradient-text-primary">Global Change</span>
+              </h1>
 
-    <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <p className="text-xl text-muted-foreground mt-6 leading-relaxed text-justify hyphens-auto">
+                Mithila art is a timeless cultural expression that blends
+                traditional heritage with modern global values. Rooted in
+                Janakpur’s rich artistic legacy, it reflects themes of nature,
+                community, and harmony. Through powerful visual storytelling, it
+                highlights key global issues such as climate change, gender
+                equality, cultural preservation, and social justice. This art
+                form transforms complex challenges into meaningful narratives
+                that are easy to understand and connect with. By bridging local
+                artisans with global platforms, Mithila art empowers communities
+                and promotes dialogue, making it a living force for education,
+                awareness, and sustainable change.
+              </p>
+            </div>
 
-      {/* LEFT SIDE - TEXT */}
-      <div className="text-left">
-
-        <h1 className="font-playfair text-5xl font-bold">
-          Mithila Art for <span className="gradient-text-primary">Global Change</span>
-        </h1>
-
-      <p className="text-xl text-muted-foreground mt-6 leading-relaxed text-justify">
-  Mithila art is a timeless cultural expression that blends traditional heritage with modern global values. Rooted in Janakpur’s rich artistic legacy, it reflects themes of nature, community, and harmony.
-
-  Through powerful visual storytelling, it highlights key global issues such as climate change, gender equality, cultural preservation, and social justice. This art form transforms complex challenges into meaningful narratives that are easy to understand and connect with.
-
-  By bridging local artisans with global platforms, Mithila art empowers communities and promotes dialogue, making it a living force for education, awareness, and sustainable change.
-</p>
-
-
-      </div>
-
-      {/* RIGHT SIDE - 3D MANDALA */}
- <div className="flex justify-center items-center w-full h-[400px] lg:h-[500px]">
-  <Mandala3D />
-</div>
-
-    </div>
-
-  </div>
-</section>
+            {/* RIGHT SIDE - 3D MANDALA */}
+            <div className="flex justify-center items-center w-full h-[400px] lg:h-[500px]">
+              <Mandala3D />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Featured Image */}
       <section className="py-12">
@@ -185,9 +186,13 @@ const ArtForSDGs = () => {
                 <div className="grid lg:grid-cols-3 gap-8 items-center">
                   {/* Text */}
                   <div className="lg:col-span-2">
-                    <h3 className="font-playfair text-xl font-semibold">{edition.sdg}</h3>
+                    <h3 className="font-playfair text-xl font-semibold">
+                      {edition.sdg}
+                    </h3>
                     <p className="text-primary mt-2 mb-4">{edition.theme}</p>
-                    <p className="text-muted-foreground">{edition.description}</p>
+                    <p className="text-muted-foreground">
+                      {edition.description}
+                    </p>
                   </div>
 
                   {/* Image */}
@@ -218,8 +223,12 @@ const ArtForSDGs = () => {
                 <div className="w-12 h-12 bg-gradient-sindoor rounded-xl flex items-center justify-center mb-4">
                   <comp.icon className="text-white w-6 h-6" />
                 </div>
-                <h3 className="font-playfair text-lg font-bold mb-2">{comp.title}</h3>
-                <p className="text-sm text-muted-foreground">{comp.description}</p>
+                <h3 className="font-playfair text-lg font-bold mb-2">
+                  {comp.title}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {comp.description}
+                </p>
               </div>
             ))}
           </div>
@@ -235,20 +244,21 @@ const ArtForSDGs = () => {
                 UN Partnership & Global Reach
               </h2>
               <p className="text-muted-foreground mb-4">
-                Exhibited at UN Headquarters during the High-Level Political Forum and major
-                diplomatic events.
+                Exhibited at UN Headquarters during the High-Level Political
+                Forum and major diplomatic events.
               </p>
             </div>
 
             <div className="rounded-2xl overflow-hidden">
-              <img src={unImage} alt="UN Partnership" className="w-full object-cover" />
+              <img
+                src={unImage}
+                alt="UN Partnership"
+                className="w-full object-cover"
+              />
             </div>
           </div>
         </div>
       </section>
-
-   
-    
 
       {/* CTA */}
       <section className="py-20 bg-gradient-sindoor text-white text-center">

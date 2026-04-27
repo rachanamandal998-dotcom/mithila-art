@@ -367,7 +367,7 @@ export default function Mission() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* CTA
         <section id="join-movement" className="px-4 pb-24 pt-10">
           <div className="container mx-auto">
             <motion.div
@@ -415,6 +415,7 @@ export default function Mission() {
             </motion.div>
           </div>
         </section>
+         */}
       </main>
       <Footer />
     </>

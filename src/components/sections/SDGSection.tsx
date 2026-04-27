@@ -1,13 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  BookOpen,
-  Users,
-  Leaf,
-  TreePine,
-  ExternalLink,
-  
-} from "lucide-react";
+import { BookOpen, Users, Leaf, TreePine, ExternalLink } from "lucide-react";
 import sdgArt from "@/assets/sdg-mithila-art.jpg";
 import { Link } from "react-router-dom";
 
@@ -150,16 +143,18 @@ export const SDGSection = () => {
                 </button>
               ))}
             </div>
-            <Link to="/art-for-sdgs">
-              <Button
-                variant="accent"
-                size="lg"
-                className="group flex items-center gap-2"
-              >
-                Explore Our SDG Initiatives
-                <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+              <Link to="/art-for-sdgs">
+                <Button
+                  variant="accent"
+                  size="lg"
+                  className="group flex items-center gap-2"
+                >
+                  Explore Our SDG Initiatives
+                  <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </div>
           </div>
 
           {/* Right: Visual Display */}
