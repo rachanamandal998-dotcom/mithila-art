@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Palette, BookOpen, Users, Star, ArrowRight } from 'lucide-react';
 import kidsWorkshop from '@/assets/kids-workshop-illustration.jpg';
+import { Link } from "react-router-dom";
 
 const programs = [
   {
@@ -127,11 +128,17 @@ export const KidsSection = () => {
                 </div>
               ))}
             </div>
+<Link to="/enroll-child" className="w-full sm:w-auto">
+  <Button
+    variant="hero"
+    size="lg"
+    className="group w-full sm:w-auto flex items-center gap-2"
+  >
+    Enroll Your Child
+    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+  </Button>
+</Link>
 
-            <Button variant="hero" size="lg" className="group">
-              Enroll Your Child
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Calendar, Image, Award, Music, ArrowRight } from 'lucide-react';
 import festivalImage from '@/assets/festival-celebration.jpg';
+import { Link } from 'react-router-dom';
 
 const festivalHighlights = [
   {
@@ -116,13 +117,18 @@ export const FestivalSection = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
+              <Link to="/register-festival">
               <Button variant="hero" size="lg" className="group">
                 Register Now
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
+              </Link>
+              <Link to="festival">
               <Button variant="heroOutline" size="lg">
                 View Past Festivals
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
+              </Link>
             </div>
           </div>
 

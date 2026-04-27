@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { MapPin, Calendar, ArrowRight } from 'lucide-react';
 import masterArtist from '@/assets/master-artist.jpg';
+
 
 const tourCities = [
   { city: 'New York', country: 'USA', date: 'March 2025', status: 'confirmed' },
@@ -144,11 +146,12 @@ export const WorldTourSection = () => {
                 </div>
               ))}
             </div>
-
+<Link to="/world-tour">
             <Button variant="hero" size="lg" className="w-full sm:w-auto group">
               View Full Tour Schedule
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
+            </Link>
           </div>
         </div>
       </div>

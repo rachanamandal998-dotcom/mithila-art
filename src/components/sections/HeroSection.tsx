@@ -8,7 +8,7 @@ export const HeroSection = () => {
   const [current, setCurrent] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
-  // ✅ Fixed: Use i.imgur.com + file extensions. Replace these with your actual image URLs
+ 
   const slides = [
     "https://imgur.com/OIceEgl.jpg",
     "https://i.imgur.com/FlqUoxe.jpg",

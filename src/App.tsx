@@ -20,6 +20,8 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ui/ScrollToTop";
+import EnrollChildPage from "../src/components/sections/EnrollChildPage";
+import RegisterFestivalPage from "../src/components/sections/RegisterFestivalPage";   
 
 const queryClient = new QueryClient();
 
@@ -45,6 +47,8 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
+      <Route path="/enroll-child" element={<EnrollChildPage />} />
+      <Route path="/register-festival" element={<RegisterFestivalPage />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
