@@ -18,14 +18,6 @@ import { Header } from '@/components/layout/Header';
 import { Button } from '@/components/ui/button';
 
 // Assets
-import museumImage from '@/assets/museum-concept.jpg';
-import GlobalChange from '../assets/GlobalChange.png';
-import GlobalChange4 from '../assets/GlobalChange4.png';
-import mithilaArtwork from '../assets/mithila-artwork.jpg';
-import mithilaHero from '../assets/mithila-hero.jpg';
-import festivalCelebration3 from '../assets/festival-celebration3.jpg';
-import sdgMithilaArt from '../assets/sdg-mithila-art.jpg';
-import masterArtist3 from '../assets/master-artist3.jpg';
 
 const Future = () => {
   const majorInitiatives = [
@@ -116,13 +108,14 @@ const Future = () => {
   ];
 
   const allImages = [
-    GlobalChange,
-    GlobalChange4,
-    mithilaArtwork,
-    mithilaHero,
-    festivalCelebration3,
-    sdgMithilaArt,
-    masterArtist3
+   "https://imgur.com/Own66V0.jpg",
+   "https://imgur.com/7if7GVo.jpg",
+   "https://imgur.com/6nYtMni.jpg",
+   "https://imgur.com/3jRHRdG.jpg",
+   "https://imgur.com/QpMCrR0.jpg",
+   "https://imgur.com/8snBgDr.jpg",
+   "https://imgur.com/QZMr9zS.jpg",
+   "https://imgur.com/l6gcXgH.jpg",
   ];
 
   // Helper to format filenames for display

@@ -287,7 +287,7 @@ const Programs = () => {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA */}
       <section className="py-20 bg-gradient-peacock text-secondary-foreground">
