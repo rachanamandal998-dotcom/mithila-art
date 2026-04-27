@@ -8,9 +8,8 @@ import { useToast } from '@/hooks/use-toast';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, Clock, Heart, Users, Building, Send, Palette, GraduationCap, Globe, Calendar } from 'lucide-react';
 
-// 1. Add your QR image import
-import WhatsAppQR from '@/assets/qr.jpg'; // <-- put your QR image path here
 
+import WhatsAppQR from '@/assets/qr.jpg'; 
 const Contact = () => {
   const { toast } = useToast();
 
@@ -61,7 +60,7 @@ const Contact = () => {
       icon: MapPin,
       title: "Location",
       details: "New York, NY (Serving the Tri-State Area & Beyond)",
-      temporaryAddress: "Kamalamai-5 Madhutar, Sindhuli", 
+      temporaryAddress: "Sindhuli, Nepal", 
       link: "#"
     },
     { icon: Clock, title: "Office Hours", details: "Sunday-Friday 11-6", link: "#" }

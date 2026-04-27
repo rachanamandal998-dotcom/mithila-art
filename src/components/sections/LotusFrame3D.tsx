@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import heroArt from "@/assets/mithila-hero.jpg";
+
 
 /**
  * Modern 3D lotus-petal frame surrounding an authentic Mithila artwork.
@@ -108,7 +108,7 @@ export function LotusFrame3D({ className = "" }: { className?: string }) {
           style={{ transform: "translate(-50%, -50%) translateZ(90px)" }}
         >
           <img
-            src={heroArt}
+            src="https://imgur.com/fImCSiF.jpg"
             alt="Traditional Mithila painting from Janakpur depicting Goddess Sita with peacocks and lotus"
             className="h-full w-full object-contain"
             width={1024}

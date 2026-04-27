@@ -15,7 +15,6 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import mithila from "../assets/mithila-heritage-mural.jpg"
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Card } from "@/components/ui/card";
@@ -237,7 +236,7 @@ export default function Mission() {
             >
               <div className="absolute inset-6 rounded-full bg-accent/20 blur-3xl" />
               <img
-                src={mithila}
+                src="https://imgur.com/r3Ao9Re.jpg"
                 alt="Mithila Art"
                 className="relative aspect-[11/8] w-full rounded-md border border-border object-cover shadow-xl animate-[float_6s_ease-in-out_infinite]"
               />

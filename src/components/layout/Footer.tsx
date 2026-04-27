@@ -104,7 +104,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-sm text-ricepaper/70">
                 <Phone className="w-4 h-4 text-haldi flex-shrink-0" />
-                +1 (555) 123-4567
+             +977 9741667448
               </div>
             </div>
 
