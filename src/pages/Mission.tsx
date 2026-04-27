@@ -17,9 +17,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Card } from "@/components/ui/card";
 import CardSlider from "@/components/sections/CardSlider";
-import globalChangeImg from "../assets/GlobalChange4.png";
+
 
 
 const fadeUp = {
@@ -314,7 +313,7 @@ export default function Mission() {
     {/* RIGHT SIDE IMAGE */}
     <div className="relative flex justify-center lg:justify-end">
       <img
-        src={globalChangeImg}
+        src="https://imgur.com/C32257m.jpg"
         alt="Global Change Mithila Art"
         className="w-full max-w-md lg:max-w-lg rounded-2xl shadow-xl object-cover"
       />
