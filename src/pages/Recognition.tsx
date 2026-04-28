@@ -1034,20 +1034,7 @@ export default function Recognition() {
                 world. Collaborate, support artists, and spread this cultural
                 heritage.
               </p>
-              <div className="mt-10 flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
-                <Button variant="heritage" size="xl" className="gap-2" asChild>
-                  <Link to="/partner">
-                    <Handshake className="h-5 w-5" />
-                    <span>Explore Partnership</span>
-                  </Link>
-                </Button>
-                <Button variant="art" size="xl" className="gap-2" asChild>
-                  <Link to="/about">
-                    <BookOpen className="h-5 w-5" />
-                    <span>Learn About Us</span>
-                  </Link>
-                </Button>
-              </div>
+              
             </motion.div>
           </div>
         </section>
