@@ -2,11 +2,25 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useNavigate } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
+
 
 const EnrollChildPage = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="min-h-screen py-20 px-4 bg-gradient-to-b from-orange-50 to-yellow-100">
       <div className="max-w-3xl mx-auto">
+        <div>
+          <button
+            onClick={() => navigate("/")}
+            className="flex item-center page-2 text-sm font-medium text-gray-700 hover:text-black"
+          >
+            <ArrowLeft size={18} />
+            Back to Home
+          </button>
+        </div>
         {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
