@@ -1,0 +1,375 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Mukta:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+/* Mithila Center USA Design System - Authentic Nepali Mithila Heritage */
+
+@layer base {
+  :root {
+    /* Mithila Heritage Color Palette */
+    --sindoor-red: 352 73% 50%;
+    --haldi-yellow: 45 90% 57%;
+    --peacock-blue: 202 66% 39%;
+    --leaf-green: 107 63% 38%;
+    --orchid-purple: 291 46% 41%;
+    --terracotta-orange: 12 76% 61%;
+    --earth-brown: 26 46% 33%;
+    --rice-paper: 45 100% 92%;
+    --maithil-pink: 324 81% 84%;
+    --ink-black: 0 0% 10%;
+    
+    /* Semantic Tokens */
+    --background: 45 100% 98%;
+    --foreground: 0 0% 10%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    
+    --primary: 352 73% 50%;
+    --primary-foreground: 45 100% 98%;
+    
+    --secondary: 202 66% 39%;
+    --secondary-foreground: 45 100% 98%;
+    
+    --muted: 45 30% 90%;
+    --muted-foreground: 26 30% 40%;
+    
+    --accent: 45 90% 57%;
+    --accent-foreground: 0 0% 10%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 26 20% 85%;
+    --input: 26 20% 85%;
+    --ring: 352 73% 50%;
+    
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(45 100% 92%) 0%, hsl(45 100% 98%) 50%, hsl(0 0% 100%) 100%);
+    --gradient-sindoor: linear-gradient(135deg, hsl(352 73% 50%) 0%, hsl(12 76% 61%) 100%);
+    --gradient-peacock: linear-gradient(135deg, hsl(202 66% 39%) 0%, hsl(202 66% 55%) 100%);
+    --gradient-haldi: linear-gradient(135deg, hsl(45 90% 57%) 0%, hsl(45 90% 70%) 100%);
+    --gradient-cultural: linear-gradient(180deg, hsl(45 100% 92%) 0%, hsl(0 0% 100%) 100%);
+    --gradient-overlay: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, rgba(26, 26, 26, 0.8) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px rgba(123, 74, 46, 0.08);
+    --shadow-card: 0 8px 30px -4px rgba(123, 74, 46, 0.12);
+    --shadow-elevated: 0 20px 50px -12px rgba(123, 74, 46, 0.2);
+    --shadow-glow-primary: 0 0 40px rgba(215, 38, 56, 0.2);
+    --shadow-glow-accent: 0 0 40px rgba(244, 196, 48, 0.3);
+    
+    /* Sidebar */
+    --sidebar-background: 45 100% 98%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 352 73% 50%;
+    --sidebar-primary-foreground: 45 100% 98%;
+    --sidebar-accent: 45 90% 57%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 26 20% 85%;
+    --sidebar-ring: 352 73% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 45 100% 92%;
+    
+    --card: 0 0% 12%;
+    --card-foreground: 45 100% 92%;
+    
+    --popover: 0 0% 12%;
+    --popover-foreground: 45 100% 92%;
+    
+    --primary: 352 73% 55%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 202 66% 50%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 0 0% 18%;
+    --muted-foreground: 45 30% 70%;
+    
+    --accent: 45 90% 57%;
+    --accent-foreground: 0 0% 10%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 352 73% 55%;
+    
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 45 100% 92%;
+    --sidebar-primary: 352 73% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 45 90% 57%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 352 73% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  /* Mithila Border Pattern */
+  .mithila-border {
+    position: relative;
+  }
+  
+  .mithila-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, 
+      hsl(var(--sindoor-red)) 0%, 
+      hsl(var(--haldi-yellow)) 25%, 
+      hsl(var(--peacock-blue)) 50%, 
+      hsl(var(--leaf-green)) 75%, 
+      hsl(var(--sindoor-red)) 100%
+    );
+  }
+  
+  /* Aripana Pattern Divider */
+  .aripana-divider {
+    @apply relative py-8;
+  }
+  
+  .aripana-divider::before,
+  .aripana-divider::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      hsl(var(--sindoor-red)) 20%, 
+      hsl(var(--haldi-yellow)) 50%, 
+      hsl(var(--sindoor-red)) 80%, 
+      transparent 100%
+    );
+  }
+  
+  .aripana-divider::before {
+    top: 0;
+  }
+  
+  .aripana-divider::after {
+    bottom: 0;
+  }
+  
+  /* Cultural texture overlay */
+  .rice-paper-texture {
+    background-color: hsl(var(--rice-paper));
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d72638' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  /* Glass effect for cards */
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-md border border-border/50;
+    box-shadow: var(--shadow-card);
+  }
+  
+  /* Animated underline for links */
+  .link-underline {
+    @apply relative inline-block;
+  }
+  
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+  
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+  
+  /* Section with cultural accent */
+  .section-cultural {
+    @apply relative overflow-hidden;
+  }
+  
+  .section-cultural::before {
+    content: '';
+    @apply absolute -top-20 -right-20 w-40 h-40 rounded-full opacity-10;
+    background: radial-gradient(circle, hsl(var(--haldi-yellow)) 0%, transparent 70%);
+  }
+  
+  /* Peacock feather accent */
+  .peacock-accent {
+    @apply relative;
+  }
+  
+  .peacock-accent::after {
+    content: '';
+    @apply absolute -bottom-10 -left-10 w-32 h-32 rounded-full opacity-5;
+    background: radial-gradient(circle, hsl(var(--peacock-blue)) 0%, transparent 70%);
+  }
+}
+
+@layer utilities {
+  /* Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite 2s;
+  }
+  
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+  
+  .animate-fade-in-slow {
+    animation: fadeIn 1.2s ease-out forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+  
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+  
+  /* Scroll-triggered animations */
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Parallax helper */
+  .parallax-slow {
+    will-change: transform;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Decorative Mithila motif pattern */
+.mithila-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, hsl(var(--sindoor-red) / 0.05) 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, hsl(var(--haldi-yellow) / 0.05) 2px, transparent 2px);
+  background-size: 40px 40px;
+}
+
+/* Gradient text */
+.gradient-text-primary {
+  background: linear-gradient(135deg, hsl(var(--sindoor-red)) 0%, hsl(var(--terracotta-orange)) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-cultural {
+  background: linear-gradient(135deg, hsl(var(--peacock-blue)) 0%, hsl(var(--orchid-purple)) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
